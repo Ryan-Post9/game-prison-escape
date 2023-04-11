@@ -188,25 +188,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aiqr2\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\Level 1.csproj",
+      "projectUniqueName": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\Level 1.csproj",
       "projectName": "Level 1",
-      "projectPath": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\Level 1.csproj",
-      "packagesPath": "C:\\Users\\aiqr2\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\obj\\",
+      "projectPath": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\Level 1.csproj",
+      "packagesPath": "C:\\Users\\Cabot McTavish\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aiqr2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cabot McTavish\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -263,7 +261,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

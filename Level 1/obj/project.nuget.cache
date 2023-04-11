@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rr5yhXmvtPzGhVHDt2NPu++ZrHcCyWbW6m3vGK+0d4v9kBnKlm3UIsyCGQZftrMI9Dok5u9VKwMnMtzwqbHObQ==",
+  "dgSpecHash": "/p63gQBX3+V+qxkZFsrk3JtPGwvw44hBEpzqTL42FVW0td1MoXDI+SXs1OMqk/ppozlxRVlMB81oMACM+ZGUog==",
   "success": true,
-  "projectFilePath": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\Level 1.csproj",
+  "projectFilePath": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\Level 1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aiqr2\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.263\\monogame.content.builder.task.3.8.1.263.nupkg.sha512",
-    "C:\\Users\\aiqr2\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.263\\monogame.framework.desktopgl.3.8.1.263.nupkg.sha512",
-    "C:\\Users\\aiqr2\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\aiqr2\\.nuget\\packages\\tiledcs\\3.3.3\\tiledcs.3.3.3.nupkg.sha512"
+    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.263\\monogame.content.builder.task.3.8.1.263.nupkg.sha512",
+    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.263\\monogame.framework.desktopgl.3.8.1.263.nupkg.sha512",
+    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\tiledcs\\3.3.3\\tiledcs.3.3.3.nupkg.sha512"
   ],
   "logs": []
 }

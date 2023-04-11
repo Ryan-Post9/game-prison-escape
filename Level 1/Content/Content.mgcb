@@ -74,6 +74,18 @@
 /processorParam:TextureFormat=Color
 /build:Idle.png
 
+#begin Key.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Key.png
+
 #begin Officer_sheet_boxed_0.png
 /importer:TextureImporter
 /processor:TextureProcessor

@@ -31,6 +31,8 @@ public class Game1 : Game
     Texture2D characterJump;
     Texture2D characterRoll;
     Texture2D characterDodge;
+    Texture2D key;
+    Texture2D policeRun;
     float timer;
     int threshold;
 
@@ -39,7 +41,10 @@ public class Game1 : Game
     Rectangle[] runSourceRectangles;
     Rectangle[] jumpSourceRectangles;
     Rectangle[] dodgeSourceRectangles;
+    Rectangle[] keyRectangle;
+    Rectangle[] policeRunRectangles;
     byte[] animationFrames;
+    byte[] NPCanimationFrames;
 
     float x = 60;
     float y = 400;
@@ -48,6 +53,7 @@ public class Game1 : Game
     Vector2[] objects = { new Vector2(200, 90), new Vector2(500, 90), new Vector2(500, 65)};
     Vector2 boxVelocity = new Vector2(0, 0);
     Vector2 boxLoc = new Vector2(100,100);
+    Vector2 NPCLoc = new Vector2(720, 129);
     public Vector2 Position
     {
         get { return position; }
@@ -82,6 +88,7 @@ public class Game1 : Game
     private float dodgeTime;
     //float movement = 0;
     int animationType = 0;
+    int NPCanimationType = 0;
     byte previousAnimationIndex;
     byte currentAnimationIndex;
     
@@ -172,6 +179,8 @@ public class Game1 : Game
         box = Content.Load<Texture2D>("Idle");
         platBrown = Content.Load<Texture2D>("Brown On (32x8)");
         platGrey = Content.Load<Texture2D>("Grey On (32x8)");
+        key = Content.Load<Texture2D>("Key");
+        policeRun = Content.Load<Texture2D>("Officer_sheet_boxed_0");
 
         timer = 0;
         // Set an initial threshold of 250ms, you can change this to alter the speed of the animation (lower number = faster animation).
@@ -201,7 +210,24 @@ public class Game1 : Game
             dodgeSourceRectangles[i] = new Rectangle(0 + i * 48, 0, 48, 64);
         }
 
+        /*
+
+        keyRectangle = new Rectangle[4];
+        for (int i = 0;i < 4; i++)
+        {
+            keyRectangle[i] = new Rectangle(0 + i * 16, 0, 16, 16);
+        }
+
+        */
+
+        policeRunRectangles = new Rectangle[7];
+        for (int i=0; i<7; i++)
+        {
+            policeRunRectangles[i] = new Rectangle(1 + i*32, 65, 30, 30);
+        }
+
         animationFrames = new byte[] {10, 8, 3, 8, 10, 7, 7, 3 };
+        NPCanimationFrames = new byte[] { 7, 7 };
         previousAnimationIndex = 2;
         currentAnimationIndex = 1;
     }
@@ -344,8 +370,35 @@ public class Game1 : Game
         {
             x = 750;
         }
+        //if (NPCloc.X > 700
+
+        if (NPCLoc.X > 780)
+        {
+            NPCanimationType = 1;
+        }
+        if (NPCLoc.X < 700 )
+        {
+            NPCanimationType = 0;
+        }
+        
+        if (NPCanimationType == 1)
+        {
+            NPCLoc.X -= 1;
+        }
+        if (NPCanimationType == 0)
+        {
+            NPCLoc.X += 1;
+        }
+
+        Rectangle npc1 = new Rectangle(720, 129, policeRunRectangles[currentAnimationIndex].Width, policeRunRectangles[currentAnimationIndex].Height);
+
         //Box Collisions
-        Rectangle player = new Rectangle((int)x, (int)y - 24, idleSourceRectangles[currentAnimationIndex].Width, idleSourceRectangles[currentAnimationIndex].Height);
+        Rectangle player = new Rectangle((int)x, (int)y - 24, idleSourceRectangles[currentAnimationIndex].Width - 75, idleSourceRectangles[currentAnimationIndex].Height);
+        if (player.Intersects(npc1))
+        {
+            Exit();
+        }
+        
         var boxRect = new Rectangle((int)boxLoc.X, (int)boxLoc.Y, 28, 24);
         if (player.Intersects(boxRect))
         {
@@ -581,6 +634,12 @@ public class Game1 : Game
         }
         ApplyPhysics(gameTime);
         // TODO: Add your update logic here
+        // if NPC 
+        // animation type + 1 until end of animation, reset
+        // if hit wall, switch animation type and run 0 through 7
+
+
+
         if (timer > threshold)
         {
             if (currentAnimationIndex == animationFrames[animationType]-1)
@@ -593,6 +652,7 @@ public class Game1 : Game
                 previousAnimationIndex = currentAnimationIndex;
                 currentAnimationIndex += 1;
             }
+
             timer = 0;
         }
         else
@@ -600,6 +660,32 @@ public class Game1 : Game
             timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
         }
         if(currentAnim != animationType)
+        {
+            previousAnimationIndex = 2;
+            currentAnimationIndex = 1;
+        }
+
+        //NPC
+        if (timer > threshold)
+        {
+            if (currentAnimationIndex == 6)
+            {
+                previousAnimationIndex = currentAnimationIndex;
+                currentAnimationIndex = 1;
+            }
+            else
+            {
+                previousAnimationIndex = currentAnimationIndex;
+                currentAnimationIndex += 1;
+            }
+
+            timer = 0;
+        }
+        else
+        {
+            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+        }
+        if (currentAnim != animationType)
         {
             previousAnimationIndex = 2;
             currentAnimationIndex = 1;
@@ -753,6 +839,14 @@ public class Game1 : Game
         }
         //_spriteBatch.Draw(characterIdle, new Vector2(100, 100), Color.White);
 
+        if (NPCanimationType == 0)
+        {
+            _spriteBatch.Draw(policeRun, NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White);
+        }
+        else
+        {
+            _spriteBatch.Draw(policeRun, NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+        }
 
         _spriteBatch.End();
         // TODO: Add your drawing code here
