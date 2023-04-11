@@ -32,3 +32,10 @@ D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\run cycle 48x4
 D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).xnb
 D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).xnb
 D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Idle.xnb
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\TiledCS.dll
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Terrain (16x16).xnb
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\level.tmx
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\terrain.tsx
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
+D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Idle.tsx

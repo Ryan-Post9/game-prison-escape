@@ -53,6 +53,10 @@
             "MonoGame.Framework.DesktopGL": {
               "target": "Package",
               "version": "[3.8.1.263, )"
+            },
+            "TiledCS": {
+              "target": "Package",
+              "version": "[3.3.3, )"
             }
           },
           "imports": [

@@ -22,6 +22,27 @@
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.263" />
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.263" />
+    <PackageReference Include="TiledCS" Version="3.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Free\Terrain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Content\Brown On %2832x8%29.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Grey On %2832x8%29.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Idle.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\level.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\terrain.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
     <Message Text="Restoring dotnet tools" Importance="High" />

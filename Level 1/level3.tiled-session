@@ -1,0 +1,64 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Content/level.tmx",
+    "expandedProjectPaths": [
+        "Content",
+        "."
+    ],
+    "fileStates": {
+        "Content/Brown On (32x8).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Content/Grey On (32x8).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Content/Idle.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Content/level.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 366.6666666666667,
+                "y": 140.66666666666669
+            }
+        },
+        "Content/terrain.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "D:/dev/mg1-deleteSomeDay/Level 1/Level 1/Content",
+    "map.height": 30,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 50,
+    "openFiles": [
+        "Content/level.tmx",
+        "Content/terrain.tsx",
+        "Content/Brown On (32x8).tsx",
+        "Content/Grey On (32x8).tsx",
+        "Content/Idle.tsx"
+    ],
+    "project": "level3.tiled-project",
+    "recentFiles": [
+        "Content/Idle.tsx",
+        "Content/Grey On (32x8).tsx",
+        "Content/Brown On (32x8).tsx",
+        "Content/terrain.tsx",
+        "Content/level.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 24,
+        "width": 28
+    },
+    "tileset.type": 0
+}
