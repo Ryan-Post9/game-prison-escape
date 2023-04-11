@@ -760,11 +760,11 @@ public class Game1 : Game
         }
         else if (animationType == 5)
         {
-            _spriteBatch.Draw(box, new Vector2(x, y), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+            _spriteBatch.Draw(box, new Vector2(x, y+20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
         }
         else if (animationType == 6)
         {
-            _spriteBatch.Draw(box, new Vector2(x, y), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+            _spriteBatch.Draw(box, new Vector2(x, y+20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
         }
         else if (animationType == 7)
         {
