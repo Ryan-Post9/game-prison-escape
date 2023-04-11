@@ -195,11 +195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\Level 1.csproj",
+      "projectUniqueName": "D:\\dev\\game-prison-escape\\Level 1\\Level 1.csproj",
       "projectName": "Level 1",
-      "projectPath": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\Level 1.csproj",
+      "projectPath": "D:\\dev\\game-prison-escape\\Level 1\\Level 1.csproj",
       "packagesPath": "C:\\Users\\aiqr2\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\mg1-deleteSomeDay\\Level 1\\Level 1\\obj\\",
+      "outputPath": "D:\\dev\\game-prison-escape\\Level 1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -14,6 +14,7 @@ using System.Diagnostics;
 using System.Linq; //this will come in later
 using TiledCS;
 using System.Reflection.Emit;
+//using System.Numerics;
 
 namespace Level_1;
 
@@ -25,6 +26,10 @@ public class Game1 : Game
     Texture2D platBrown;
     Texture2D platGrey;
 
+    Texture2D spotlight;
+    Vector2[] spotlightLocs = { new Vector2(10, 10) };
+    float spotDirection = 5.0f;
+
     Texture2D characterIdle;
     Texture2D characterRun;
     Texture2D characterLand;
@@ -34,7 +39,7 @@ public class Game1 : Game
     float timer;
     int threshold;
 
-   
+    
     Rectangle[] idleSourceRectangles;
     Rectangle[] runSourceRectangles;
     Rectangle[] jumpSourceRectangles;
@@ -167,7 +172,7 @@ public class Game1 : Game
         characterJump = Content.Load<Texture2D>("player jump 48x48");
         characterDodge = Content.Load<Texture2D>("Player Roll 48x48");
 
-       
+        spotlight = Content.Load<Texture2D>("Spotlight64x64");
 
         box = Content.Load<Texture2D>("Idle");
         platBrown = Content.Load<Texture2D>("Brown On (32x8)");
@@ -613,6 +618,16 @@ public class Game1 : Game
         }*/
         isJumping = false;
         isDodging = false;
+        //TESTING SPOTLIGHT
+        if (spotlightLocs[0].X > 730)
+        {
+            spotDirection = -5.0f;
+        }
+        else if (spotlightLocs[0].X < 100)
+        {
+            spotDirection = 5.0f;
+        }
+        spotlightLocs[0].X += spotDirection;
         base.Update(gameTime);
     }
 
@@ -715,10 +730,14 @@ public class Game1 : Game
             }
         }
 
-       // _spriteBatch.Draw(box, objects[2], new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-       // _spriteBatch.Draw(platGrey, objects[0], new Rectangle(0, 0, 32, 8), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-       // _spriteBatch.Draw(platBrown, objects[1], new Rectangle(0, 0, 32, 8), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-
+        // _spriteBatch.Draw(box, objects[2], new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+        // _spriteBatch.Draw(platGrey, objects[0], new Rectangle(0, 0, 32, 8), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+        // _spriteBatch.Draw(platBrown, objects[1], new Rectangle(0, 0, 32, 8), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+        for(int spot = 0; spot < spotlightLocs.Count(); spot++)
+        {
+            _spriteBatch.Draw(spotlight, spotlightLocs[spot], new Rectangle(0, 0, 64, 64), Color.White * 0.5f, angle, origin, 1.0f, SpriteEffects.None, 0);
+        }
+        
         if (animationType == 0)
         {
             _spriteBatch.Draw(characterIdle, new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
@@ -741,11 +760,11 @@ public class Game1 : Game
         }
         else if (animationType == 5)
         {
-            _spriteBatch.Draw(characterDodge, new Vector2(x, y), dodgeSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+            _spriteBatch.Draw(box, new Vector2(x, y), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
         }
         else if (animationType == 6)
         {
-            _spriteBatch.Draw(characterDodge, new Vector2(x, y), dodgeSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+            _spriteBatch.Draw(box, new Vector2(x, y), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
         }
         else if (animationType == 7)
         {

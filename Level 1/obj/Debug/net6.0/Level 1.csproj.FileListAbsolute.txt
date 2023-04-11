@@ -39,33 +39,33 @@ D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\terrain.tsx
 D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
 D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
 D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Idle.tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\level.tmx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\terrain.tsx
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.exe
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.dll
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\MonoGame.Framework.dll
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\TiledCS.dll
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Character Idle 48x48.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\File.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.xnb
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Officer_sheet_boxed_0.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\player jump 48x48.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\player land 48x48.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Player Roll 48x48.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\run cycle 48x48.xnb
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Spotlight.xnb
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Spotlight64x64.xnb
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Terrain (16x16).xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.exe
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.deps.json
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.runtimeconfig.json
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.pdb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\MonoGame.Framework.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\TiledCS.dll
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.tsx
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\level.tmx
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\terrain.tsx
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
@@ -78,5 +78,3 @@ D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.CopyComplete
 D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.dll
 D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\refint\Level 1.dll
 D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.pdb
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.genruntimeconfig.cache
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\ref\Level 1.dll
