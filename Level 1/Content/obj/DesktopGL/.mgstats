@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+<<<<<<< HEAD
 "C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Brown On (32x8).png","C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/bin/DesktopGL/Brown On (32x8).xnb","TextureProcessor","Texture2DContent",542,8277,0.4269793
 "C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Character Idle 48x48.png","C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/bin/DesktopGL/Character Idle 48x48.xnb","TextureProcessor","Texture2DContent",1438,92245,0.0180435
 "C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/File.fx","C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/bin/DesktopGL/File.xnb","EffectProcessor","CompiledEffectContent",888,1295,0.6871512
@@ -12,3 +13,19 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Player Roll 48x48.png","C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/bin/DesktopGL/Player Roll 48x48.xnb","TextureProcessor","Texture2DContent",3629,64597,0.011931
 "C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/run cycle 48x48.png","C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/bin/DesktopGL/run cycle 48x48.xnb","TextureProcessor","Texture2DContent",3254,73813,0.0139563
 "C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Terrain (16x16).png","C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/bin/DesktopGL/Terrain (16x16).xnb","TextureProcessor","Texture2DContent",8792,247893,0.0249165
+=======
+"D:/dev/game-prison-escape/Level 1/Content/Brown On (32x8).png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Brown On (32x8).xnb","TextureProcessor","Texture2DContent",542,8277,0.1330113
+"D:/dev/game-prison-escape/Level 1/Content/Character Idle 48x48.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Character Idle 48x48.xnb","TextureProcessor","Texture2DContent",1438,92245,0.0379371
+"D:/dev/game-prison-escape/Level 1/Content/File.fx","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/File.xnb","EffectProcessor","CompiledEffectContent",888,1295,0.4463199
+"D:/dev/game-prison-escape/Level 1/Content/File.spritefont","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1416966
+"D:/dev/game-prison-escape/Level 1/Content/Grey On (32x8).png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Grey On (32x8).xnb","TextureProcessor","Texture2DContent",509,8277,0.0041647
+"D:/dev/game-prison-escape/Level 1/Content/Idle.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Idle.xnb","TextureProcessor","Texture2DContent",399,2773,0.0034255
+"D:/dev/game-prison-escape/Level 1/Content/Officer_sheet_boxed_0.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Officer_sheet_boxed_0.xnb","TextureProcessor","Texture2DContent",53346,1680725,0.0944317
+"D:/dev/game-prison-escape/Level 1/Content/player jump 48x48.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/player jump 48x48.xnb","TextureProcessor","Texture2DContent",1021,27733,0.0129449
+"D:/dev/game-prison-escape/Level 1/Content/player land 48x48.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/player land 48x48.xnb","TextureProcessor","Texture2DContent",1500,83029,0.0103327
+"D:/dev/game-prison-escape/Level 1/Content/Player Roll 48x48.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Player Roll 48x48.xnb","TextureProcessor","Texture2DContent",3629,64597,0.0150434
+"D:/dev/game-prison-escape/Level 1/Content/run cycle 48x48.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/run cycle 48x48.xnb","TextureProcessor","Texture2DContent",3254,73813,0.0071022
+"D:/dev/game-prison-escape/Level 1/Content/Spotlight.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Spotlight.xnb","TextureProcessor","Texture2DContent",418,16469,0.0175748
+"D:/dev/game-prison-escape/Level 1/Content/Spotlight64x64.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Spotlight64x64.xnb","TextureProcessor","Texture2DContent",2306,15957,0.0149387
+"D:/dev/game-prison-escape/Level 1/Content/Terrain (16x16).png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Terrain (16x16).xnb","TextureProcessor","Texture2DContent",8792,247893,0.0117769
+>>>>>>> main

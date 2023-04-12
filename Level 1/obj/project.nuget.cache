@@ -1,13 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "/p63gQBX3+V+qxkZFsrk3JtPGwvw44hBEpzqTL42FVW0td1MoXDI+SXs1OMqk/ppozlxRVlMB81oMACM+ZGUog==",
+  "dgSpecHash": "Ukw1A9Ty1JoVrTm5PJU0i7Z7Bya3wNYo3XdSGQ+sNdu35fu0cKB3hW6zGo8xANoT4ryGTv+HqECQC2x3FrIzrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\Level 1.csproj",
+  "projectFilePath": "D:\\dev\\game-prison-escape\\Level 1\\Level 1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.263\\monogame.content.builder.task.3.8.1.263.nupkg.sha512",
-    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.263\\monogame.framework.desktopgl.3.8.1.263.nupkg.sha512",
-    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\tiledcs\\3.3.3\\tiledcs.3.3.3.nupkg.sha512"
+    "C:\\Users\\aiqr2\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.263\\monogame.content.builder.task.3.8.1.263.nupkg.sha512",
+    "C:\\Users\\aiqr2\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.263\\monogame.framework.desktopgl.3.8.1.263.nupkg.sha512",
+    "C:\\Users\\aiqr2\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aiqr2\\.nuget\\packages\\tiledcs\\3.3.3\\tiledcs.3.3.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\dev\\game-prison-escape\\Level 1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

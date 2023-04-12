@@ -188,23 +188,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cabot McTavish\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aiqr2\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\Level 1.csproj",
+      "projectUniqueName": "D:\\dev\\game-prison-escape\\Level 1\\Level 1.csproj",
       "projectName": "Level 1",
-      "projectPath": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\Level 1.csproj",
-      "packagesPath": "C:\\Users\\Cabot McTavish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cabot McTavish\\Source\\Repos\\game-prison-escape\\Level 1\\obj\\",
+      "projectPath": "D:\\dev\\game-prison-escape\\Level 1\\Level 1.csproj",
+      "packagesPath": "C:\\Users\\aiqr2\\.nuget\\packages\\",
+      "outputPath": "D:\\dev\\game-prison-escape\\Level 1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cabot McTavish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aiqr2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -261,8 +263,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\dev\\game-prison-escape\\Level 1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
