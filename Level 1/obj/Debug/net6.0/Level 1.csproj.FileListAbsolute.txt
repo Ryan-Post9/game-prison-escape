@@ -127,3 +127,6 @@ C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0
 =======
 >>>>>>> main
 D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Key.xnb
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.deps.json
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.runtimeconfig.json
+D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.pdb
