@@ -1,4 +1,4 @@
 ﻿
-using var game = new Level_1.Game1();
+using var game = new ECS_Framework.Game1();
 game.Run();
 
