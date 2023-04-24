@@ -12,11 +12,27 @@
             "scaleInEditor": 1
         },
         "prisonlevel1.tmx": {
-            "scale": 0.7421875,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 398.82105263157894,
-                "y": 240.50526315789472
+                "x": 398.6666666666667,
+                "y": 173.99999999999997
+            }
+        },
+        "prisonlevel2.tmx": {
+            "scale": 0.80275,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 401.1211460604173,
+                "y": 241.04640298972282
+            }
+        },
+        "prisonlevel3.tmx": {
+            "scale": 0.80275,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 401.1211460604173,
+                "y": 241.04640298972282
             }
         }
     },

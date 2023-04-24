@@ -24,14 +24,7 @@ namespace ECS_Framework
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        public World world;
-        private KeyboardState previousKeyboardState;
         Texture2D box;
-
-        Texture2D spotlight;
-        Vector2[] spotlightLocs = { new Vector2(10, 10) };
-        float spotDirection = 5.0f;
-
         Texture2D characterIdle;
         Texture2D characterRun;
         Texture2D characterLand;
@@ -40,6 +33,15 @@ namespace ECS_Framework
         Texture2D characterDodge;
         Texture2D key;
         Texture2D policeRun;
+        Texture2D spotlight;
+
+        public World world;
+        private KeyboardState previousKeyboardState;
+        
+        Vector2[] spotlightLocs = { new Vector2(10, 10) };
+        float spotDirection = 5.0f;
+
+        
         float timer;
         int threshold;
 
@@ -139,6 +141,7 @@ namespace ECS_Framework
 
             //Add objects
 
+            Loader.LoadContent(Content);
 
             map = new TiledMap(Content.RootDirectory + "\\level.tmx");
             tilesets = map.GetTiledTilesets(Content.RootDirectory + "/");
@@ -165,18 +168,6 @@ namespace ECS_Framework
             boxLoc = new Vector2(tileX - 40, 70);
             Debug.WriteLine(boxLoc.Y);
             brownPlatLayer = map.Layers.First(l => l.name == "Brown Plat");
-
-            // TODO: use this.Content to load your game content here
-            characterIdle = Content.Load<Texture2D>("Character Idle 48x48");
-            characterRun = Content.Load<Texture2D>("run cycle 48x48");
-            characterJump = Content.Load<Texture2D>("player jump 48x48");
-            characterDodge = Content.Load<Texture2D>("Player Roll 48x48");
-
-            spotlight = Content.Load<Texture2D>("Spotlight64x64");
-
-            box = Content.Load<Texture2D>("Idle");
-            key = Content.Load<Texture2D>("Key");
-            policeRun = Content.Load<Texture2D>("Officer_sheet_boxed_0");
 
             timer = 0;
             // Set an initial threshold of 250ms, you can change this to alter the speed of the animation (lower number = faster animation).
@@ -252,11 +243,7 @@ namespace ECS_Framework
 
             // Prevent the player from running faster than his top speed.            
             velocity.X = MathHelper.Clamp(velocity.X, -GameConstants.MaxMoveSpeed, GameConstants.MaxMoveSpeed);
-            //velocity = DetectCollision(velocity, gameTime);
 
-            //if (objects[2].Y > 100)
-            //   boxVelocity.X *= GroundDragFactor;
-            //else
             if (objects[2].Y <= 100)
                 boxVelocity.Y *= GameConstants.AirDragFactor;
             boxVelocity.X = MathHelper.Clamp(boxVelocity.X, -GameConstants.MaxMoveSpeed, GameConstants.MaxMoveSpeed);
@@ -478,34 +465,6 @@ namespace ECS_Framework
                 }
 
             }
-            /* if (boxRect.Intersects(solidPlat))
-             {
-                 if (objects[2].Y < objects[0].Y - 60)
-                 {
-                     boxVelocity.X = 0;
-                     boxVelocity.Y = 0;
-                 }
-             }*/
-            /*
-             else if (boxRect.Intersects(otherPlat))
-             {
-
-                 if (boxVelocity.Y > 0)
-                 {
-                     if (objects[2].Y < objects[0].Y)
-                     {
-                         boxVelocity.X = 0;
-                         boxVelocity.Y = 0;
-                     }
-                     else
-                     {
-                         boxVelocity.X = 0;
-                         boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
-                     }
-
-                 }
-
-             }*/
             boxLoc.X += boxVelocity.X * elapsed;
             boxLoc.Y += boxVelocity.Y * elapsed;
 

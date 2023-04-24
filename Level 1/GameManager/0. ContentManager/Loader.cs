@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using System.IO;
 using System;
+using Microsoft.Xna.Framework.Input;
+using System.Reflection.Metadata;
 
 namespace ECS_Framework
 {
@@ -29,24 +31,24 @@ namespace ECS_Framework
         /// <param name="content">The ContentManager to load assets with.</param>
         public static void LoadContent(ContentManager content)
         {
-            // Player
-            textures.Add("player_idle", content.Load<Texture2D>("Player/Frog/Idle"));
-            textures.Add("player_walking", content.Load<Texture2D>("Player/Frog/Walking"));
-            textures.Add("player_jump", content.Load<Texture2D>("Player/Frog/Jump"));
-            textures.Add("player_double_jump", content.Load<Texture2D>("Player/Frog/Double Jump"));
-            textures.Add("player_fall", content.Load<Texture2D>("Player/Frog/Fall"));
-            textures.Add("player_slide", content.Load<Texture2D>("Player/Frog/Wall Jump"));
+            //Player
+            textures.Add("characterIdle", content.Load<Texture2D>("Character Idle 48x48"));
+            textures.Add("characterRun", content.Load<Texture2D>("run cycle 48x48"));
+            textures.Add("characterJump", content.Load<Texture2D>("player jump 48x48"));
+            textures.Add("characterDodge", content.Load<Texture2D>("Player Roll 48x48"));
 
-            // Background
-            textures.Add("bg_green", content.Load<Texture2D>("Background/BG_Green"));
-            
-            textures.Add("Terrain", content.Load<Texture2D>("TiledMap/Terrain"));
-            // Add more terrain types here
+            //Objects
+            textures.Add("spotlight", content.Load<Texture2D>("Spotlight64x64"));
+            textures.Add("box", content.Load<Texture2D>("Idle"));
+            textures.Add("key", content.Load<Texture2D>("Key"));
+            textures.Add("policeRun", content.Load<Texture2D>("Officer_sheet_boxed_0"));
 
-            // Map Terrains to their Level
+            //Terrain
+            textures.Add("Terrain", content.Load<Texture2D>("Prison_B"));
+
+            //Map Terrains
             AddTerrain("Terrain", LevelID.Level1);
             AddTerrain("Terrain", LevelID.Level2);
-            //Map more Levels to terrains here
 
             //Load TiledMaps
             tiledHandler = new TileHandler(content);
@@ -63,11 +65,12 @@ namespace ECS_Framework
                 // Save collision boxes for each level
                 tiledHandler.GetLayersBoundsInMap();
             }
-
             //Box to debug Collisions
-            GraphicsDevice graphicsDevice = ((IGraphicsDeviceService)content.ServiceProvider.GetService(typeof(IGraphicsDeviceService))).GraphicsDevice;
-            collisionBox = new Texture2D(graphicsDevice, 1, 1);
-            collisionBox.SetData(new[] { Color.White });
+            /* GraphicsDevice graphicsDevice = ((IGraphicsDeviceService)content.ServiceProvider.GetService(typeof(IGraphicsDeviceService))).GraphicsDevice;
+             collisionBox = new Texture2D(graphicsDevice, 1, 1);
+             collisionBox.SetData(new[] { Color.White });
+            */
+
         }
 
         /// <summary>
