@@ -24,17 +24,6 @@ namespace ECS_Framework
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        Texture2D box;
-        Texture2D characterIdle;
-        Texture2D characterRun;
-        Texture2D characterLand;
-        Texture2D characterJump;
-        Texture2D characterRoll;
-        Texture2D characterDodge;
-        Texture2D key;
-        Texture2D policeRun;
-        Texture2D spotlight;
-
         public World world;
         private KeyboardState previousKeyboardState;
         
@@ -751,7 +740,7 @@ namespace ECS_Framework
                         }
                         else if (layer.name == "Box")
                         {
-                            _spriteBatch.Draw(box, boxLoc, new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+                            _spriteBatch.Draw(Loader.GetTexture("box"), boxLoc, new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
                             // _spriteBatch.Draw(box, destination, source, Color.White,
                             //    (float)rotation, Vector2.Zero, effects, 0);
                         }
@@ -766,55 +755,52 @@ namespace ECS_Framework
                 }
             }
 
-            // _spriteBatch.Draw(box, objects[2], new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-            // _spriteBatch.Draw(platGrey, objects[0], new Rectangle(0, 0, 32, 8), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-            // _spriteBatch.Draw(platBrown, objects[1], new Rectangle(0, 0, 32, 8), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
             for (int spot = 0; spot < spotlightLocs.Count(); spot++)
             {
-                _spriteBatch.Draw(spotlight, spotlightLocs[spot], new Rectangle(0, 0, 64, 64), Color.White * 0.5f, angle, origin, 1.0f, SpriteEffects.None, 0);
+                _spriteBatch.Draw(Loader.GetTexture("spotlight"), spotlightLocs[spot], new Rectangle(0, 0, 64, 64), Color.White * 0.5f, angle, origin, 1.0f, SpriteEffects.None, 0);
             }
 
             if (animationType == 0)
             {
-                _spriteBatch.Draw(characterIdle, new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+                _spriteBatch.Draw(Loader.GetTexture("characterIdle"), new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
             }
             else if (animationType == 4)
             {
-                _spriteBatch.Draw(characterIdle, new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+                _spriteBatch.Draw(Loader.GetTexture("characterIdle"), new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
             }
             else if (animationType == 1)
             {
-                _spriteBatch.Draw(characterRun, new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White);
+                _spriteBatch.Draw(Loader.GetTexture("characterRun"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White);
             }
             else if (animationType == 2)
             {
-                _spriteBatch.Draw(characterJump, new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White);
+                _spriteBatch.Draw(Loader.GetTexture("characterJump"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White);
             }
             else if (animationType == 3)
             {
-                _spriteBatch.Draw(characterRun, new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+                _spriteBatch.Draw(Loader.GetTexture("characterRun"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
             }
             else if (animationType == 5)
             {
-                _spriteBatch.Draw(box, new Vector2(x, y + 20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
+                _spriteBatch.Draw(Loader.GetTexture("box"), new Vector2(x, y + 20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
             }
             else if (animationType == 6)
             {
-                _spriteBatch.Draw(box, new Vector2(x, y + 20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+                _spriteBatch.Draw(Loader.GetTexture("box"), new Vector2(x, y + 20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
             }
             else if (animationType == 7)
             {
-                _spriteBatch.Draw(characterJump, new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+                _spriteBatch.Draw(Loader.GetTexture("characterJump"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
             }
             //_spriteBatch.Draw(characterIdle, new Vector2(100, 100), Color.White);
 
             if (NPCanimationType == 0)
             {
-                _spriteBatch.Draw(policeRun, NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White);
+                _spriteBatch.Draw(Loader.GetTexture("policeRun"), NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White);
             }
             else
             {
-                _spriteBatch.Draw(policeRun, NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
+                _spriteBatch.Draw(Loader.GetTexture("policeRun"), NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
             }
 
             _spriteBatch.End();
