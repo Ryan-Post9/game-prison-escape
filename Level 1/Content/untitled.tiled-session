@@ -1,0 +1,36 @@
+{
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Brown On (32x8).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Prison_B.tsx": {
+            "scaleInEditor": 1
+        },
+        "prisonlevel1.tmx": {
+            "scale": 0.7421875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 398.82105263157894,
+                "y": 240.50526315789472
+            }
+        }
+    },
+    "last.imagePath": "D:/dev/game-prison-escape/Level 1/Content",
+    "openFiles": [
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "Prison_B.tsx",
+        "prisonlevel1.tmx",
+        "Brown On (32x8).tsx"
+    ],
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
