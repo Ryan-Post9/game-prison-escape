@@ -26,10 +26,7 @@ namespace ECS_Framework
 
         public World world;
         private KeyboardState previousKeyboardState;
-
         Texture2D box;
-        Texture2D platBrown;
-        Texture2D platGrey;
 
         Texture2D spotlight;
         Vector2[] spotlightLocs = { new Vector2(10, 10) };
@@ -82,16 +79,7 @@ namespace ECS_Framework
         bool isJumping = false;
         private bool wasJumping;
         private float jumpTime;
-        private const float MaxJumpTime = 0.35f;
-        private const float JumpLaunchVelocity = -3500.0f;
-        private const float GravityAcceleration = 3400.0f;
-        private const float MaxFallSpeed = 550.0f;
-        private const float JumpControlPower = 0.14f;
-
-        private const float MoveAcceleration = 13000.0f;
-        private const float MaxMoveSpeed = 1750.0f;
-        private const float GroundDragFactor = 0.48f;
-        private const float AirDragFactor = 0.58f;
+        
 
         bool isDodging = false;
         private bool wasDodging;
@@ -150,7 +138,7 @@ namespace ECS_Framework
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //Add objects
-            world = new World();
+
 
             map = new TiledMap(Content.RootDirectory + "\\level.tmx");
             tilesets = map.GetTiledTilesets(Content.RootDirectory + "/");
@@ -187,8 +175,6 @@ namespace ECS_Framework
             spotlight = Content.Load<Texture2D>("Spotlight64x64");
 
             box = Content.Load<Texture2D>("Idle");
-            platBrown = Content.Load<Texture2D>("Brown On (32x8)");
-            platGrey = Content.Load<Texture2D>("Grey On (32x8)");
             key = Content.Load<Texture2D>("Key");
             policeRun = Content.Load<Texture2D>("Officer_sheet_boxed_0");
 
@@ -248,11 +234,11 @@ namespace ECS_Framework
 
             // Base velocity is a combination of horizontal movement control and
             // acceleration downward due to gravity.
-            velocity.X += x * MoveAcceleration * elapsed;
-            velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+            velocity.X += x * GameConstants.MoveAcceleration * elapsed;
+            velocity.Y = MathHelper.Clamp(velocity.Y + GameConstants.GravityAcceleration * elapsed, -GameConstants.MaxFallSpeed, GameConstants.MaxFallSpeed);
 
             //boxVelocity.X += objects[2].X * MoveAcceleration * elapsed;
-            boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+            boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GameConstants.GravityAcceleration * elapsed, -GameConstants.MaxFallSpeed, GameConstants.MaxFallSpeed);
 
 
             velocity.Y = DoJump(velocity.Y, gameTime);
@@ -260,20 +246,20 @@ namespace ECS_Framework
 
             // Apply pseudo-drag horizontally.
             if (y > 100)
-                velocity.X *= GroundDragFactor;
+                velocity.X *= GameConstants.GroundDragFactor;
             else
-                velocity.X *= AirDragFactor;
+                velocity.X *= GameConstants.AirDragFactor;
 
             // Prevent the player from running faster than his top speed.            
-            velocity.X = MathHelper.Clamp(velocity.X, -MaxMoveSpeed, MaxMoveSpeed);
+            velocity.X = MathHelper.Clamp(velocity.X, -GameConstants.MaxMoveSpeed, GameConstants.MaxMoveSpeed);
             //velocity = DetectCollision(velocity, gameTime);
 
             //if (objects[2].Y > 100)
             //   boxVelocity.X *= GroundDragFactor;
             //else
             if (objects[2].Y <= 100)
-                boxVelocity.Y *= AirDragFactor;
-            boxVelocity.X = MathHelper.Clamp(boxVelocity.X, -MaxMoveSpeed, MaxMoveSpeed);
+                boxVelocity.Y *= GameConstants.AirDragFactor;
+            boxVelocity.X = MathHelper.Clamp(boxVelocity.X, -GameConstants.MaxMoveSpeed, GameConstants.MaxMoveSpeed);
 
             // Apply velocity.
             if (hitGround && !isJumping)
@@ -300,10 +286,10 @@ namespace ECS_Framework
                 }
 
                 // If we are in the ascent of the jump
-                if (0.0f < jumpTime && jumpTime <= MaxJumpTime)
+                if (0.0f < jumpTime && jumpTime <= GameConstants.MaxJumpTime)
                 {
                     // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
-                    velocityY = JumpLaunchVelocity * (1.0f - (float)Math.Pow(jumpTime / MaxJumpTime, JumpControlPower));
+                    velocityY = GameConstants.JumpLaunchVelocity * (1.0f - (float)Math.Pow(jumpTime / GameConstants.MaxJumpTime, GameConstants.JumpControlPower));
                 }
                 else
                 {
@@ -333,10 +319,10 @@ namespace ECS_Framework
                 }
 
                 // If we are in the ascent of the jump
-                if (0.0f < dodgeTime && dodgeTime <= MaxJumpTime)
+                if (0.0f < dodgeTime && dodgeTime <= GameConstants.MaxJumpTime)
                 {
                     // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
-                    velocityX = 100 * (1.0f - (float)Math.Pow(dodgeTime / MaxJumpTime, JumpControlPower));
+                    velocityX = 100 * (1.0f - (float)Math.Pow(dodgeTime / GameConstants.MaxJumpTime, GameConstants.JumpControlPower));
                 }
                 else
                 {
@@ -471,7 +457,7 @@ namespace ECS_Framework
                     else
                     {
                         boxVelocity.X = 0;
-                        boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+                        boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GameConstants.GravityAcceleration * elapsed, -GameConstants.MaxFallSpeed, GameConstants.MaxFallSpeed);
                         //Fall down
                         if (animationType == 2 && x + 16 < obj.x)
                         {
@@ -719,7 +705,6 @@ namespace ECS_Framework
                 spotDirection = 5.0f;
             }
             spotlightLocs[0].X += spotDirection;
-            world.Update(gameTime);
             base.Update(gameTime);
         }
 
