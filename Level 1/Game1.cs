@@ -119,7 +119,10 @@ namespace ECS_Framework
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic herez
+            _graphics.PreferredBackBufferWidth = GameConstants.SCREEN_WIDTH;
+            _graphics.PreferredBackBufferHeight = GameConstants.SCREEN_HEIGHT;
+            _graphics.ApplyChanges();
+
             IsFixedTimeStep = true;
             TargetElapsedTime = TimeSpan.FromSeconds(1 / GameConstants.FPS);
             base.Initialize();
