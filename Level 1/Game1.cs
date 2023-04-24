@@ -120,7 +120,8 @@ namespace ECS_Framework
         protected override void Initialize()
         {
             // TODO: Add your initialization logic herez
-
+            IsFixedTimeStep = true;
+            TargetElapsedTime = TimeSpan.FromSeconds(1 / GameConstants.FPS);
             base.Initialize();
         }
 
@@ -131,6 +132,7 @@ namespace ECS_Framework
             //Add objects
 
             Loader.LoadContent(Content);
+            world = new World();
 
             map = new TiledMap(Content.RootDirectory + "\\level.tmx");
             tilesets = map.GetTiledTilesets(Content.RootDirectory + "/");
@@ -653,6 +655,8 @@ namespace ECS_Framework
                 spotDirection = 5.0f;
             }
             spotlightLocs[0].X += spotDirection;
+
+            world.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -660,7 +664,7 @@ namespace ECS_Framework
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin();
-
+            /*
             var tileLayers = map.Layers.Where(x => x.type == TiledLayerType.TileLayer);
             foreach (var layer in tileLayers)
             {
@@ -754,6 +758,9 @@ namespace ECS_Framework
                     }
                 }
             }
+            */
+            Loader.tiledHandler.Draw(world.CurrentLevel.Id.ToString(), _spriteBatch);
+            world.Draw(_spriteBatch);
 
             for (int spot = 0; spot < spotlightLocs.Count(); spot++)
             {

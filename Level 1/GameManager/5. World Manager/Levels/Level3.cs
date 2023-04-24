@@ -1,11 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ECS_Framework
 {
     /// <summary>
     /// Implements the <see cref="LevelInitializer"/> interface to provide initialization logic for Level 1.
     /// </summary>
-    public class Level1Initializer : LevelInitializer
+    public class Level3Initializer : LevelInitializer
     {
         /// <summary>
         /// Returns a list of entities to be created and added to the level.
