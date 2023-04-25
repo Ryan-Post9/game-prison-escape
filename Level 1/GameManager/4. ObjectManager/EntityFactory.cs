@@ -41,12 +41,12 @@ namespace ECS_Framework
 
             // Animations
             AnimatedComponent animation =  new AnimatedComponent();
-            animation.AddAnimation("player_idle", "idle", 1, 11, 20);
-            animation.AddAnimation("player_walking", "walking", 1, 12, 20);
-            animation.AddAnimation("player_jump", "jump", 1, 1, 20);
-            animation.AddAnimation("player_double_jump", "double_jump",  1, 6, 20);
-            animation.AddAnimation("player_fall", "fall", 1, 1, 20);
-            animation.AddAnimation("player_slide", "slide", 1, 5, 20);
+            animation.AddAnimation("characterIdle", "idle", 1, 11, 20);
+            animation.AddAnimation("characterRun", "walking", 1, 12, 20);
+            animation.AddAnimation("characterJump", "jump", 1, 1, 20);
+            animation.AddAnimation("box", "hide",  1, 6, 20);
+            //animation.AddAnimation("player_fall", "fall", 1, 1, 20);
+            //animation.AddAnimation("player_slide", "slide", 1, 5, 20);
             player.AddComponent(animation);
 
             // States

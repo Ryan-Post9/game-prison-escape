@@ -1,8 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 "D:/dev/game-prison-escape/Level 1/Content/Brown On (32x8).png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Brown On (32x8).xnb","TextureProcessor","Texture2DContent",542,8277,0.1568207
 "D:/dev/game-prison-escape/Level 1/Content/Character Idle 48x48.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Character Idle 48x48.xnb","TextureProcessor","Texture2DContent",1438,92245,0.0098488
-"D:/dev/game-prison-escape/Level 1/Content/File.fx","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/File.xnb","EffectProcessor","CompiledEffectContent",888,1295,0.5127012
-"D:/dev/game-prison-escape/Level 1/Content/File.spritefont","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1706235
+"D:/dev/game-prison-escape/Level 1/Content/File.fx","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/File.xnb","EffectProcessor","CompiledEffectContent",888,1295,0.44356
+"D:/dev/game-prison-escape/Level 1/Content/File.spritefont","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1459824
 "D:/dev/game-prison-escape/Level 1/Content/Grey On (32x8).png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Grey On (32x8).xnb","TextureProcessor","Texture2DContent",509,8277,0.0033385
 "D:/dev/game-prison-escape/Level 1/Content/Idle.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Idle.xnb","TextureProcessor","Texture2DContent",399,2773,0.0036096
 "D:/dev/game-prison-escape/Level 1/Content/Key.png","D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Key.xnb","TextureProcessor","Texture2DContent",594,4181,0.0438481
