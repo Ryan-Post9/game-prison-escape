@@ -4,36 +4,22 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-<<<<<<< HEAD
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Brown On (32x8).png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Character Idle 48x48.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/File.fx</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/File.spritefont</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Grey On (32x8).png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Idle.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Key.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Officer_sheet_boxed_0.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/player jump 48x48.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/player land 48x48.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Player Roll 48x48.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/run cycle 48x48.png</File>
-    <File>C:/Users/Cabot McTavish/source/repos/game-prison-escape/Level 1/Content/Terrain (16x16).png</File>
-=======
     <File>D:/dev/game-prison-escape/Level 1/Content/Brown On (32x8).png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Character Idle 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/File.fx</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/File.spritefont</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Grey On (32x8).png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Idle.png</File>
+    <File>D:/dev/game-prison-escape/Level 1/Content/Key.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Officer_sheet_boxed_0.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/player jump 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/player land 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Player Roll 48x48.png</File>
+    <File>D:/dev/game-prison-escape/Level 1/Content/Prison_B.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/run cycle 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight64x64.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Terrain (16x16).png</File>
->>>>>>> main
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
@@ -49,9 +35,8 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
-<<<<<<< HEAD
-=======
     <File xsi:nil="true" />
->>>>>>> main
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

@@ -45,7 +45,7 @@ namespace ECS_Framework
         byte[] NPCanimationFrames;
 
         float x = 60;
-        float y = 400;
+        float y = 200;
 
         bool isLanded = true;
         Vector2[] objects = { new Vector2(200, 90), new Vector2(500, 90), new Vector2(500, 65) };
@@ -119,8 +119,8 @@ namespace ECS_Framework
 
         protected override void Initialize()
         {
-            _graphics.PreferredBackBufferWidth = GameConstants.SCREEN_WIDTH;
-            _graphics.PreferredBackBufferHeight = GameConstants.SCREEN_HEIGHT;
+            //_graphics.PreferredBackBufferWidth = GameConstants.SCREEN_WIDTH;
+            //_graphics.PreferredBackBufferHeight = GameConstants.SCREEN_HEIGHT;
             _graphics.ApplyChanges();
 
             IsFixedTimeStep = true;
@@ -135,7 +135,7 @@ namespace ECS_Framework
             //Add objects
 
             Loader.LoadContent(Content);
-            world = new World();
+            
 
             map = new TiledMap(Content.RootDirectory + "\\level.tmx");
             tilesets = map.GetTiledTilesets(Content.RootDirectory + "/");
@@ -211,6 +211,8 @@ namespace ECS_Framework
             NPCanimationFrames = new byte[] { 7, 7 };
             previousAnimationIndex = 2;
             currentAnimationIndex = 1;
+
+            world = new World();
         }
 
         public void ApplyPhysics(GameTime gameTime)
@@ -762,12 +764,11 @@ namespace ECS_Framework
                 }
             }
             */
-            Loader.tiledHandler.Draw(world.CurrentLevel.Id.ToString(), _spriteBatch);
-            world.Draw(_spriteBatch);
+            
 
             for (int spot = 0; spot < spotlightLocs.Count(); spot++)
             {
-                _spriteBatch.Draw(Loader.GetTexture("spotlight"), spotlightLocs[spot], new Rectangle(0, 0, 64, 64), Color.White * 0.5f, angle, origin, 1.0f, SpriteEffects.None, 0);
+                _spriteBatch.Draw(Loader.GetTexture("spotlight"), spotlightLocs[spot], new Rectangle(0, 0, 64, 64), Color.White * 0.5f, angle, origin, 1.0f, SpriteEffects.None, 2);
             }
 
             if (animationType == 0)
@@ -784,7 +785,7 @@ namespace ECS_Framework
             }
             else if (animationType == 2)
             {
-                _spriteBatch.Draw(Loader.GetTexture("characterJump"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White);
+                _spriteBatch.Draw(Loader.GetTexture("characterJump"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
             }
             else if (animationType == 3)
             {
@@ -812,7 +813,8 @@ namespace ECS_Framework
             {
                 _spriteBatch.Draw(Loader.GetTexture("policeRun"), NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
             }
-
+            Loader.tiledHandler.Draw(world.CurrentLevel.Id.ToString(), _spriteBatch);
+            world.Draw(_spriteBatch);
             _spriteBatch.End();
             // TODO: Add your drawing code here
 

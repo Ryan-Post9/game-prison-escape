@@ -7,8 +7,9 @@ namespace ECS_Framework
     /// </summary>
     public enum LevelID
     {
-        Level1,
-        Level2,
+        prisonlevel1,
+        prisonlevel2,
+        prisonlevel3
         // Add more level IDs here
     }
 

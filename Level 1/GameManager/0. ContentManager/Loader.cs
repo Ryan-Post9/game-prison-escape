@@ -47,17 +47,20 @@ namespace ECS_Framework
             textures.Add("Terrain", content.Load<Texture2D>("Prison_B"));
 
             //Map Terrains
-            AddTerrain("Terrain", LevelID.Level1);
-            AddTerrain("Terrain", LevelID.Level2);
+            AddTerrain("Terrain", LevelID.prisonlevel1);
+            AddTerrain("Terrain", LevelID.prisonlevel2);
+            AddTerrain("Terrain", LevelID.prisonlevel3);
 
             //Load TiledMaps
             tiledHandler = new TileHandler(content);
+            
+            //TODO: BREAKS PROGRAM FIX
             foreach (LevelID level in LevelID.GetValues(typeof(LevelID)))
             {
                 string levelName = level.ToString();
                 tiledHandler.Load(
-                    Path.Combine(content.RootDirectory, "TiledMap", $"{levelName}.tmx"),
-                    Path.Combine(content.RootDirectory, "TiledMap", " "),
+                    Path.Combine(content.RootDirectory, $"{levelName}.tmx"),
+                    Path.Combine(content.RootDirectory,  " "),
                     levelName,
                     GetTerrain(level)
                 );

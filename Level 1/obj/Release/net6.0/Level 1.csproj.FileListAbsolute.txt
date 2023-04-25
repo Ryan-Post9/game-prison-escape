@@ -43,3 +43,4 @@ D:\dev\game-prison-escape\Level 1\obj\Release\net6.0\Level 1.pdb
 D:\dev\game-prison-escape\Level 1\obj\Release\net6.0\Level 1.genruntimeconfig.cache
 D:\dev\game-prison-escape\Level 1\obj\Release\net6.0\ref\Level 1.dll
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Key.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Prison_B.xnb

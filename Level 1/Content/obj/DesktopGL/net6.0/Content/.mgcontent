@@ -15,12 +15,14 @@
     <File>D:/dev/game-prison-escape/Level 1/Content/player jump 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/player land 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Player Roll 48x48.png</File>
+    <File>D:/dev/game-prison-escape/Level 1/Content/Prison_B.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/run cycle 48x48.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight64x64.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Terrain (16x16).png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

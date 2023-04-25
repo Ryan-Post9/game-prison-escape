@@ -16,7 +16,7 @@ namespace ECS_Framework
         public World()
         {
             levelManager = new LevelManager();
-            CurrentLevel = levelManager.GetLevel(LevelID.Level1);
+            CurrentLevel = levelManager.GetLevel(LevelID.prisonlevel1);
             systems = new SystemManager(CurrentLevel.Id);
             LoadLevel(CurrentLevel);
         }
