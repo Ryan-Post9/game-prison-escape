@@ -44,3 +44,4 @@ D:\dev\game-prison-escape\Level 1\obj\Release\net6.0\Level 1.genruntimeconfig.ca
 D:\dev\game-prison-escape\Level 1\obj\Release\net6.0\ref\Level 1.dll
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Key.xnb
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Prison_B.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\WireMesh.xnb

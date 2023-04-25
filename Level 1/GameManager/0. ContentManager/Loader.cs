@@ -43,8 +43,12 @@ namespace ECS_Framework
             textures.Add("key", content.Load<Texture2D>("Key"));
             textures.Add("policeRun", content.Load<Texture2D>("Officer_sheet_boxed_0"));
 
+            //Background
+            textures.Add("WireMesh", content.Load<Texture2D>("WireMesh"));
+
             //Terrain
             textures.Add("Terrain", content.Load<Texture2D>("Prison_B"));
+            
 
             //Map Terrains
             AddTerrain("Terrain", LevelID.prisonlevel1);

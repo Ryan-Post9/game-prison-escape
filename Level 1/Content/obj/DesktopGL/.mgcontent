@@ -20,8 +20,10 @@
     <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight64x64.png</File>
     <File>D:/dev/game-prison-escape/Level 1/Content/Terrain (16x16).png</File>
+    <File>D:/dev/game-prison-escape/Level 1/Content/WireMesh.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
