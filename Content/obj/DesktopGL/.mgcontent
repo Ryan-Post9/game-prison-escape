@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Background/BG_Green.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Background/BG_Yellow.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Apple.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Bananas.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Cherries.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Collected.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Kiwi.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Melon.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Orange.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Pineapple.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Items/Fruits/Strawberry.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Double Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Fall.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Hit.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Idle.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Walking.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Frog/Wall Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Double Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Fall.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Hit.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Idle.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Walking.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Player/Virtual Guy/Wall Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/TiledMap/Prison_B.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/TiledMap/Terrain.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/ECS-MonoGame/Content/Traps/Idle.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
