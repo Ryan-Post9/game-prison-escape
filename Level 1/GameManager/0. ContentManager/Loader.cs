@@ -4,8 +4,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using System.IO;
 using System;
-using Microsoft.Xna.Framework.Input;
-using System.Reflection.Metadata;
 
 namespace ECS_Framework
 {
@@ -31,40 +29,45 @@ namespace ECS_Framework
         /// <param name="content">The ContentManager to load assets with.</param>
         public static void LoadContent(ContentManager content)
         {
-            //Player
-            textures.Add("characterIdle", content.Load<Texture2D>("Character Idle 48x48"));
-            textures.Add("characterRun", content.Load<Texture2D>("run cycle 48x48"));
-            textures.Add("characterJump", content.Load<Texture2D>("player jump 48x48"));
-            textures.Add("characterDodge", content.Load<Texture2D>("Player Roll 48x48"));
+            // Player
+            textures.Add("player_idle", content.Load<Texture2D>("Player/Virtual Guy/Idle"));
+            textures.Add("player_walking", content.Load<Texture2D>("Player/Virtual Guy/Walking"));
+            textures.Add("player_jump", content.Load<Texture2D>("Player/Virtual Guy/Jump"));
+            textures.Add("player_double_jump", content.Load<Texture2D>("Player/Virtual Guy/Double Jump"));
+            textures.Add("player_fall", content.Load<Texture2D>("Player/Virtual Guy/Fall"));
+            textures.Add("player_slide", content.Load<Texture2D>("Player/Virtual Guy/Wall Jump"));
+            textures.Add("player_death", content.Load<Texture2D>("Player/Virtual Guy/Hit"));
 
-            //Objects
-            textures.Add("spotlight", content.Load<Texture2D>("Spotlight64x64"));
-            textures.Add("box", content.Load<Texture2D>("Idle"));
-            textures.Add("key", content.Load<Texture2D>("Key"));
-            textures.Add("policeRun", content.Load<Texture2D>("Officer_sheet_boxed_0"));
+            //Traps
+            textures.Add("trap", content.Load<Texture2D>("Traps/Idle"));
 
-            //Background
-            textures.Add("WireMesh", content.Load<Texture2D>("WireMesh"));
+            //Collictible Items
+            textures.Add("apple_idle", content.Load<Texture2D>("Items/Fruits/Apple"));
 
-            //Terrain
-            textures.Add("Terrain", content.Load<Texture2D>("Prison_B"));
+            //Collectible Collected
+            textures.Add("fruits_death", content.Load<Texture2D>("Items/Fruits/Collected"));
+
+            // Background
+            textures.Add("bg_green", content.Load<Texture2D>("Background/BG_Green"));
+            textures.Add("bg_yellow", content.Load<Texture2D>("Background/BG_Yellow"));
             
+            textures.Add("Terrain", content.Load<Texture2D>("TiledMap/Prison_B"));
+            // Add more terrain types here
 
-            //Map Terrains
-            AddTerrain("Terrain", LevelID.prisonlevel1);
-            AddTerrain("Terrain", LevelID.prisonlevel2);
-            AddTerrain("Terrain", LevelID.prisonlevel3);
+            // Map Terrains to their Level
+            AddTerrain("Terrain", LevelID.Level1);
+            AddTerrain("Terrain", LevelID.Level2);
+            AddTerrain("Terrain", LevelID.Level3);
+            //Map more Levels to terrains here
 
             //Load TiledMaps
             tiledHandler = new TileHandler(content);
-            
-            //TODO: BREAKS PROGRAM FIX
             foreach (LevelID level in LevelID.GetValues(typeof(LevelID)))
             {
                 string levelName = level.ToString();
                 tiledHandler.Load(
-                    Path.Combine(content.RootDirectory, $"{levelName}.tmx"),
-                    Path.Combine(content.RootDirectory,  " "),
+                    Path.Combine(content.RootDirectory, "TiledMap", $"{levelName}.tmx"),
+                    Path.Combine(content.RootDirectory, "TiledMap", " "),
                     levelName,
                     GetTerrain(level)
                 );
@@ -72,12 +75,11 @@ namespace ECS_Framework
                 // Save collision boxes for each level
                 tiledHandler.GetLayersBoundsInMap();
             }
-            //Box to debug Collisions
-            /* GraphicsDevice graphicsDevice = ((IGraphicsDeviceService)content.ServiceProvider.GetService(typeof(IGraphicsDeviceService))).GraphicsDevice;
-             collisionBox = new Texture2D(graphicsDevice, 1, 1);
-             collisionBox.SetData(new[] { Color.White });
-            */
 
+            //Box to debug Collisions
+            GraphicsDevice graphicsDevice = ((IGraphicsDeviceService)content.ServiceProvider.GetService(typeof(IGraphicsDeviceService))).GraphicsDevice;
+            collisionBox = new Texture2D(graphicsDevice, 1, 1);
+            collisionBox.SetData(new[] { Color.White });
         }
 
         /// <summary>

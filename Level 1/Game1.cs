@@ -1,731 +1,103 @@
-﻿
-//https://www.industrian.net/tutorials/monogame-using-the-content-pipeline/
-//https://www.industrian.net/tutorials/using-sprite-sheets/
-//https://www.industrian.net/tutorials/texture2d-and-drawing-sprites/
-//http://rbwhitaker.wikidot.com/monogame-rotating-sprites
-
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework.Input;
-using System.Security.Cryptography.X509Certificates;
 using System;
-using System.Diagnostics;
-
-using System.Linq; //this will come in later
-using TiledCS;
-using System.Reflection.Emit;
-//using System.Numerics;
-//namespace Level_1;
 
 namespace ECS_Framework
 {
+    /// <summary>
+    /// The main game class.
+    /// </summary>
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
         public World world;
         private KeyboardState previousKeyboardState;
-        
-        Vector2[] spotlightLocs = { new Vector2(10, 10) };
-        float spotDirection = 5.0f;
 
-        
-        float timer;
-        int threshold;
-
-
-        Rectangle[] idleSourceRectangles;
-        Rectangle[] runSourceRectangles;
-        Rectangle[] jumpSourceRectangles;
-        Rectangle[] dodgeSourceRectangles;
-        Rectangle[] keyRectangle;
-        Rectangle[] policeRunRectangles;
-        byte[] animationFrames;
-        byte[] NPCanimationFrames;
-
-        float x = 60;
-        float y = 200;
-
-        bool isLanded = true;
-        Vector2[] objects = { new Vector2(200, 90), new Vector2(500, 90), new Vector2(500, 65) };
-        Vector2 boxVelocity = new Vector2(0, 0);
-        Vector2 boxLoc = new Vector2(100, 100);
-        Vector2 NPCLoc = new Vector2(720, 129);
-        public Vector2 Position
-        {
-            get { return position; }
-            set { position = value; }
-        }
-        Vector2 position;
-
-
-        public Vector2 Velocity
-        {
-            get { return velocity; }
-            set { velocity = value; }
-        }
-        Vector2 velocity;
-
-        bool isJumping = false;
-        private bool wasJumping;
-        private float jumpTime;
-        
-
-        bool isDodging = false;
-        private bool wasDodging;
-        private float dodgeTime;
-        //float movement = 0;
-        int animationType = 0;
-        int NPCanimationType = 0;
-        byte previousAnimationIndex;
-        byte currentAnimationIndex;
-
-        private float angle = 0;
-        Vector2 origin = new Vector2(0, 0);
-
-        // initialize the tiled map
-        private TiledMap map;
-        private Dictionary<int, TiledTileset> tilesets;
-        private Texture2D tilesetTexture;
-
-        // used to flip/rotate sprites as necessary later
-        [Flags]
-        enum Trans
-        {
-            None = 0,
-            Flip_H = 1 << 0,
-            Flip_V = 1 << 1,
-            Flip_D = 1 << 2,
-
-            Rotate_90 = Flip_D | Flip_H,
-            Rotate_180 = Flip_H | Flip_V,
-            Rotate_270 = Flip_V | Flip_D,
-
-            Rotate_90AndFlip_H = Flip_H | Flip_V | Flip_D,
-        }
-
-        // create a layer to check for ground
-        private TiledLayer groundLayer;
-        private TiledLayer brownPlatLayer;
-        private TiledLayer boxLayer;
-        bool hitGround;
+        /// <summary>
+        /// Initializes the Game1 class.
+        /// </summary>
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            IsMouseVisible = false;
         }
 
+        /// <summary>
+        /// Initializes the game window and sets the desired resolution.
+        /// </summary>
         protected override void Initialize()
         {
-            //_graphics.PreferredBackBufferWidth = GameConstants.SCREEN_WIDTH;
-            //_graphics.PreferredBackBufferHeight = GameConstants.SCREEN_HEIGHT;
+            // Change the resolution 
+            _graphics.PreferredBackBufferWidth = GameConstants.SCREEN_WIDTH;
+            _graphics.PreferredBackBufferHeight = GameConstants.SCREEN_HEIGHT;
             _graphics.ApplyChanges();
 
+            // Limit FPS
             IsFixedTimeStep = true;
             TargetElapsedTime = TimeSpan.FromSeconds(1 / GameConstants.FPS);
+
             base.Initialize();
         }
 
+        /// <summary>
+        /// Loads game content.
+        /// </summary>
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            //Add objects
-
+            // Load resources
             Loader.LoadContent(Content);
-            
 
-            map = new TiledMap(Content.RootDirectory + "\\level.tmx");
-            tilesets = map.GetTiledTilesets(Content.RootDirectory + "/");
-            tilesetTexture = Content.Load<Texture2D>("Terrain (16x16)");
-            groundLayer = map.Layers.First(l => l.name == "Ground");
-            var boxLayer = map.Layers.First(l => l.name == "Box");
-            int tileX = 0;
-            int tileY = 0;
-            for (var j = 0; j < boxLayer.height; j++)
-            {
-                for (var i = 0; i < boxLayer.width; i++)
-                {
-                    // Assuming the default render order is used which is from right to bottom
-                    var index = (j * boxLayer.width) + i;
-                    var gid = boxLayer.data[index]; // The tileset tile index
-                    tileX = i * map.TileWidth;
-                    tileY = j * map.TileHeight;
-                    if (gid != 0)
-                    {
-                        break;
-                    }
-                }
-            }
-            boxLoc = new Vector2(tileX - 40, 70);
-            Debug.WriteLine(boxLoc.Y);
-            brownPlatLayer = map.Layers.First(l => l.name == "Brown Plat");
-
-            timer = 0;
-            // Set an initial threshold of 250ms, you can change this to alter the speed of the animation (lower number = faster animation).
-            threshold = 250;
-            // Three sourceRectangles contain the coordinates of Alex's three down-facing sprites on the charaset.
-            idleSourceRectangles = new Rectangle[10];
-            for (int i = 0; i < 10; i++)
-            {
-                idleSourceRectangles[i] = new Rectangle(0 + i * 48, 0, 48, 64);
-            }
-
-            runSourceRectangles = new Rectangle[8];
-            for (int i = 0; i < 8; i++)
-            {
-                runSourceRectangles[i] = new Rectangle(0 + i * 48, 0, 48, 64);
-            }
-
-            jumpSourceRectangles = new Rectangle[3];
-            for (int i = 0; i < 3; i++)
-            {
-                jumpSourceRectangles[i] = new Rectangle(0 + i * 48, 0, 48, 64);
-            }
-
-            dodgeSourceRectangles = new Rectangle[7];
-            for (int i = 0; i < 7; i++)
-            {
-                dodgeSourceRectangles[i] = new Rectangle(0 + i * 48, 0, 48, 64);
-            }
-
-            /*
-
-            keyRectangle = new Rectangle[4];
-            for (int i = 0;i < 4; i++)
-            {
-                keyRectangle[i] = new Rectangle(0 + i * 16, 0, 16, 16);
-            }
-
-            */
-
-            policeRunRectangles = new Rectangle[7];
-            for (int i = 0; i < 7; i++)
-            {
-                policeRunRectangles[i] = new Rectangle(1 + i * 32, 65, 30, 30);
-            }
-
-            animationFrames = new byte[] { 10, 8, 3, 8, 10, 7, 7, 3 };
-            NPCanimationFrames = new byte[] { 7, 7 };
-            previousAnimationIndex = 2;
-            currentAnimationIndex = 1;
-
+            // Initialize the world
             world = new World();
         }
 
-        public void ApplyPhysics(GameTime gameTime)
-        {
-            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            // Base velocity is a combination of horizontal movement control and
-            // acceleration downward due to gravity.
-            velocity.X += x * GameConstants.MoveAcceleration * elapsed;
-            velocity.Y = MathHelper.Clamp(velocity.Y + GameConstants.GravityAcceleration * elapsed, -GameConstants.MaxFallSpeed, GameConstants.MaxFallSpeed);
-
-            //boxVelocity.X += objects[2].X * MoveAcceleration * elapsed;
-            boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GameConstants.GravityAcceleration * elapsed, -GameConstants.MaxFallSpeed, GameConstants.MaxFallSpeed);
-
-
-            velocity.Y = DoJump(velocity.Y, gameTime);
-            velocity.X = DoDodge(velocity.X, gameTime);
-
-            // Apply pseudo-drag horizontally.
-            if (y > 100)
-                velocity.X *= GameConstants.GroundDragFactor;
-            else
-                velocity.X *= GameConstants.AirDragFactor;
-
-            // Prevent the player from running faster than his top speed.            
-            velocity.X = MathHelper.Clamp(velocity.X, -GameConstants.MaxMoveSpeed, GameConstants.MaxMoveSpeed);
-
-            if (objects[2].Y <= 100)
-                boxVelocity.Y *= GameConstants.AirDragFactor;
-            boxVelocity.X = MathHelper.Clamp(boxVelocity.X, -GameConstants.MaxMoveSpeed, GameConstants.MaxMoveSpeed);
-
-            // Apply velocity.
-            if (hitGround && !isJumping)
-            {
-
-            }
-            else
-            {
-                y += velocity.Y * elapsed;
-            }
-
-            //x += velocity.X * elapsed;
-        }
-        private float DoJump(float velocityY, GameTime gameTime)
-        {
-            // If the player wants to jump
-            if (isJumping)
-            {
-                // Begin or continue a jump
-                if ((!wasJumping && isLanded) || jumpTime > 0.0f)
-                {
-                    isLanded = false;
-                    jumpTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
-                }
-
-                // If we are in the ascent of the jump
-                if (0.0f < jumpTime && jumpTime <= GameConstants.MaxJumpTime)
-                {
-                    // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
-                    velocityY = GameConstants.JumpLaunchVelocity * (1.0f - (float)Math.Pow(jumpTime / GameConstants.MaxJumpTime, GameConstants.JumpControlPower));
-                }
-                else
-                {
-                    // Reached the apex of the jump
-                    jumpTime = 0.0f;
-                }
-            }
-            else
-            {
-                // Continues not jumping or cancels a jump in progress
-                jumpTime = 0.0f;
-            }
-            wasJumping = isJumping;
-
-            return velocityY;
-        }
-
-        private float DoDodge(float velocityX, GameTime gameTime)
-        {
-            // If the player wants to jump
-            if (isDodging)
-            {
-                // Begin or continue a jump
-                if ((!wasDodging) || dodgeTime > 0.0f)
-                {
-                    dodgeTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
-                }
-
-                // If we are in the ascent of the jump
-                if (0.0f < dodgeTime && dodgeTime <= GameConstants.MaxJumpTime)
-                {
-                    // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
-                    velocityX = 100 * (1.0f - (float)Math.Pow(dodgeTime / GameConstants.MaxJumpTime, GameConstants.JumpControlPower));
-                }
-                else
-                {
-                    // Reached the apex of the jump
-                    jumpTime = 0.0f;
-                }
-            }
-            else
-            {
-                // Continues not jumping or cancels a jump in progress
-                jumpTime = 0.0f;
-            }
-            wasJumping = isJumping;
-
-            return velocityX;
-        }
-
+        /// <summary>
+        /// Updates the game.
+        /// </summary>
+        /// <param name="gameTime">The current game time.</param>
         protected override void Update(GameTime gameTime)
         {
-            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //Exit if you hit end
-            if (x > 760 && (y < 161 && y > 80))
-            {
-                Exit();
-            }
-            //Don't go off screen
-            if (x < 0)
-            {
-                x = 10;
-            }
-            else if (y < 0)
-            {
-                y = 10;
-            }
-            else if (y > 800)
-            {
-                x = 60;
-                y = 400;
-            }
-            else if (x > 765)
-            {
-                x = 750;
-            }
-            //if (NPCloc.X > 700
+            KeyboardState currentKeyboardState = Keyboard.GetState();
 
-            if (NPCLoc.X > 780)
-            {
-                NPCanimationType = 1;
-            }
-            if (NPCLoc.X < 700)
-            {
-                NPCanimationType = 0;
-            }
-
-            if (NPCanimationType == 1)
-            {
-                NPCLoc.X -= 1;
-            }
-            if (NPCanimationType == 0)
-            {
-                NPCLoc.X += 1;
-            }
-
-            Rectangle npc1 = new Rectangle(720, 129, policeRunRectangles[currentAnimationIndex].Width, policeRunRectangles[currentAnimationIndex].Height);
-
-            //Box Collisions
-            Rectangle player = new Rectangle((int)x, (int)y - 24, idleSourceRectangles[currentAnimationIndex].Width - 75, idleSourceRectangles[currentAnimationIndex].Height);
-            if (player.Intersects(npc1))
-            {
-                Exit();
-            }
-
-            var boxRect = new Rectangle((int)boxLoc.X, (int)boxLoc.Y, 28, 24);
-            if (player.Intersects(boxRect))
-            {
-                if ((animationType == 5 || animationType == 6) && !Keyboard.GetState().IsKeyDown(Keys.D) && !Keyboard.GetState().IsKeyDown(Keys.A))
-                {
-                    boxVelocity.Y = -700;
-                }
-                else if (animationType == 5)
-                {
-                    boxVelocity.X = 700;
-                    boxVelocity.Y = velocity.Y;
-                }
-                else if (animationType == 6)
-                {
-                    boxVelocity.X = -700;
-                    boxVelocity.Y = velocity.Y;
-                }
-                else
-                {
-                    if (y < boxLoc.Y - 45)
-                    {
-                        isLanded = true;
-                        y = boxLoc.Y - 45;
-                    }
-                    else if (boxLoc.Y >= y - 10)
-                    {
-                        if (animationType == 1 && x + 24 < boxLoc.X)
-                        {
-                            x = boxLoc.X - 48;
-                            boxLoc.X += 5;
-                        }
-                        else if (animationType == 3 && x > boxLoc.X)
-                        {
-                            x = boxLoc.X + 24;
-                            boxLoc.X -= 5;
-                        }
-                    }
-                    //boxVelocity.X = velocity.X;
-                    //boxVelocity.Y = velocity.Y;
-                }
-            }
-            foreach (var obj in groundLayer.objects)
-            {
-                var objRect = new Rectangle((int)obj.x, (int)obj.y, (int)obj.width, (int)obj.height);
-                // can access as either a Rectangle or the direct obj calls
-                bool xoverlap = (boxLoc.X < objRect.Right) && (boxLoc.X + 32 > objRect.Left);
-                // a little wiggle room in these calcs in case the player is falling fast enough to skip through
-                bool yoverlap = (boxLoc.Y + 32 - obj.y < 15) && (boxLoc.Y + 32 - obj.y > -15);
-
-                //Debug.WriteLine(obj.y + " " + obj.height + " " + obj.width);
-                if (xoverlap && yoverlap)
-                {
-                    //Debug.WriteLine(obj.y + " " + obj.height);
-                    if (boxLoc.Y < obj.y && boxVelocity.Y >= 0)
-                    {
-                        boxVelocity.Y = 0;
-                        boxVelocity.X = 0;
-                        //boxLoc = obj.y - 46;
-                    }
-                    else
-                    {
-                        boxVelocity.X = 0;
-                        boxVelocity.Y = MathHelper.Clamp(boxVelocity.Y + GameConstants.GravityAcceleration * elapsed, -GameConstants.MaxFallSpeed, GameConstants.MaxFallSpeed);
-                        //Fall down
-                        if (animationType == 2 && x + 16 < obj.x)
-                        {
-                            x = obj.x - 20;
-                        }
-                        else if (animationType == 7 && x > obj.x + obj.width - 30)
-                        {
-                            x = obj.x + obj.width;
-                        }
-                        else if ((animationType == 2 || animationType == 7))
-                        {
-                            boxLoc.Y = obj.y + 30;
-                        }
-                    }
-                    hitGround = true;
-                    isLanded = true;
-                    break;
-                }
-
-            }
-            boxLoc.X += boxVelocity.X * elapsed;
-            boxLoc.Y += boxVelocity.Y * elapsed;
-
-            // Check player ground collision
-            hitGround = false;
-            foreach (var obj in brownPlatLayer.objects)
-            {
-                var objRect = new Rectangle((int)obj.x, (int)obj.y, (int)obj.width, (int)obj.height);
-                // can access as either a Rectangle or the direct obj calls
-                bool xoverlap = (x < objRect.Right) && (x + 32 > objRect.Left);
-                // a little wiggle room in these calcs in case the player is falling fast enough to skip through
-                bool yoverlap = (y + 32 - obj.y < 15) && (y + 32 - obj.y > -15);
-
-                if (xoverlap && yoverlap)
-                {
-                    hitGround = true;
-                    isLanded = true;
-                    y = obj.y - 40;
-                    // once a collision has been detected, no need to check the other objects
-                    break;
-                }
-            }
-            foreach (var obj in groundLayer.objects)
-            {
-                var objRect = new Rectangle((int)obj.x, (int)obj.y, (int)obj.width, (int)obj.height);
-                // can access as either a Rectangle or the direct obj calls
-                bool xoverlap = (x < objRect.Right) && (x + 32 > objRect.Left);
-                // a little wiggle room in these calcs in case the player is falling fast enough to skip through
-                bool yoverlap = (y + 32 - obj.y < 15) && (y + 32 - obj.y > -15);
-
-                //Debug.WriteLine(obj.y + " " + obj.height + " " + obj.width);
-                if (xoverlap && yoverlap)
-                {
-                    //Debug.WriteLine(obj.y + " " + obj.height);
-                    if (y < obj.y && velocity.Y >= 0)
-                    {
-                        //Debug.WriteLine("Yup");
-                        isLanded = true;
-                        hitGround = true;
-                        y = obj.y - 46;
-                    }
-                    else
-                    {
-                        //Debug.WriteLine("Nope");
-                        //Fall down
-                        if (animationType == 2 && x + 16 < obj.x)
-                        {
-                            x = obj.x - 20;
-                        }
-                        else if (animationType == 7 && x > obj.x + obj.width - 30)
-                        {
-                            x = obj.x + obj.width;
-                        }
-                        else if ((animationType == 2 || animationType == 7))
-                        {
-                            y = obj.y + 30;
-                        }
-                    }
-                    hitGround = true;
-                    isLanded = true;
-                    break;
-                }
-
-            }
-            if (hitGround == false)
-            {
-                isLanded = false;
-            }
-            //Debug.WriteLine(hitGround);
-            int currentAnim = animationType;
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (currentKeyboardState.IsKeyDown(Keys.Escape))
                 Exit();
 
-            if (GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed ||
-                Keyboard.GetState().IsKeyDown(Keys.Left) ||
-                Keyboard.GetState().IsKeyDown(Keys.A))
-            {
-                animationType = 3;
-                x -= 5;
-            }
-            else if (GamePad.GetState(PlayerIndex.One).Buttons.B == ButtonState.Pressed ||
-                     Keyboard.GetState().IsKeyDown(Keys.Right) ||
-                     Keyboard.GetState().IsKeyDown(Keys.D))
-            {
-                animationType = 1;
-                x += 5;
-            }
-            else
-            {
-                if (animationType == 3 || animationType == 4 || animationType == 6 || animationType == 7)
-                {
-                    animationType = 4;
-                }
-                else
-                {
-                    animationType = 0;
-                }
+            else if (currentKeyboardState.IsKeyDown(Keys.R) && previousKeyboardState.IsKeyUp(Keys.R))
+                world.ResetCurrentLevel();
 
-            }
-            if (
-                Keyboard.GetState().IsKeyDown(Keys.Up) ||
-                Keyboard.GetState().IsKeyDown(Keys.W))
-            {
-                isJumping = true;
-                if (animationType == 3 || animationType == 4 || animationType == 6 || animationType == 7)
-                    animationType = 7;
-                else
-                {
-                    animationType = 2;
-                }
-            }
-            if (
-                Keyboard.GetState().IsKeyDown(Keys.Space))
-            {
-                isDodging = true;
-                if (animationType == 3 || animationType == 4 || animationType == 6 || animationType == 7)
-                    animationType = 6;
-                else
-                {
-                    animationType = 5;
-                }
-            }
-            ApplyPhysics(gameTime);
-            // TODO: Add your update logic here
-            // if NPC 
-            // animation type + 1 until end of animation, reset
-            // if hit wall, switch animation type and run 0 through 7
+            else if (currentKeyboardState.IsKeyDown(Keys.P) && previousKeyboardState.IsKeyUp(Keys.P))
+                world.PreviousLevel();
 
+            else if (currentKeyboardState.IsKeyDown(Keys.N) && previousKeyboardState.IsKeyUp(Keys.N))
+                world.NextLevel();
 
-
-            if (timer > threshold)
-            {
-                if (currentAnimationIndex == animationFrames[animationType] - 1)
-                {
-                    previousAnimationIndex = currentAnimationIndex;
-                    currentAnimationIndex = 1;
-                }
-                else
-                {
-                    previousAnimationIndex = currentAnimationIndex;
-                    currentAnimationIndex += 1;
-                }
-
-                timer = 0;
-            }
-            else
-            {
-                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            }
-            if (currentAnim != animationType)
-            {
-                previousAnimationIndex = 2;
-                currentAnimationIndex = 1;
-            }
-
-            //NPC
-            if (timer > threshold)
-            {
-                if (currentAnimationIndex == 6)
-                {
-                    previousAnimationIndex = currentAnimationIndex;
-                    currentAnimationIndex = 1;
-                }
-                else
-                {
-                    previousAnimationIndex = currentAnimationIndex;
-                    currentAnimationIndex += 1;
-                }
-
-                timer = 0;
-            }
-            else
-            {
-                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            }
-            if (currentAnim != animationType)
-            {
-                previousAnimationIndex = 2;
-                currentAnimationIndex = 1;
-            }
-            /*if(y > 1500)
-            {
-                x = 60;
-                y = 400;
-                isLanded = true;
-                hitGround = true;
-            }*/
-            isJumping = false;
-            isDodging = false;
-            //TESTING SPOTLIGHT
-            if (spotlightLocs[0].X > 730)
-            {
-                spotDirection = -5.0f;
-            }
-            else if (spotlightLocs[0].X < 100)
-            {
-                spotDirection = 5.0f;
-            }
-            spotlightLocs[0].X += spotDirection;
+            previousKeyboardState = currentKeyboardState;
 
             world.Update(gameTime);
+
             base.Update(gameTime);
         }
 
+        /// <summary>
+        /// Draws the game.
+        /// </summary>
+        /// <param name="gameTime">The current game time.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.DimGray);
-            _spriteBatch.Begin();
-           
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            _spriteBatch.Begin(SpriteSortMode.BackToFront, null, SamplerState.PointClamp);
             Loader.tiledHandler.Draw(world.CurrentLevel.Id.ToString(), _spriteBatch);
             world.Draw(_spriteBatch);
-
-            for (int spot = 0; spot < spotlightLocs.Count(); spot++)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("spotlight"), spotlightLocs[spot], new Rectangle(0, 0, 64, 64), Color.White * 0.5f, angle, origin, 1.0f, SpriteEffects.None, 2);
-            }
-
-            if (animationType == 0)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("characterIdle"), new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-            }
-            else if (animationType == 4)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("characterIdle"), new Vector2(x, y), idleSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
-            }
-            else if (animationType == 1)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("characterRun"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White);
-            }
-            else if (animationType == 2)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("characterJump"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.None, 1);
-            }
-            else if (animationType == 3)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("characterRun"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
-            }
-            else if (animationType == 5)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("box"), new Vector2(x, y + 20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.None, 0);
-            }
-            else if (animationType == 6)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("box"), new Vector2(x, y + 20), new Rectangle(0, 0, 28, 24), Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 0);
-            }
-            else if (animationType == 7)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("characterJump"), new Vector2(x, y), runSourceRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
-            }
-            //_spriteBatch.Draw(characterIdle, new Vector2(100, 100), Color.White);
-
-            if (NPCanimationType == 0)
-            {
-                _spriteBatch.Draw(Loader.GetTexture("policeRun"), NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White);
-            }
-            else
-            {
-                _spriteBatch.Draw(Loader.GetTexture("policeRun"), NPCLoc, policeRunRectangles[currentAnimationIndex], Color.White, angle, origin, 1.0f, SpriteEffects.FlipHorizontally, 1);
-            }
-           
             _spriteBatch.End();
-            // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }
     }
-
 }

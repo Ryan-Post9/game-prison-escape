@@ -45,3 +45,31 @@ D:\dev\game-prison-escape\Level 1\obj\Release\net6.0\ref\Level 1.dll
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Key.xnb
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Prison_B.xnb
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\WireMesh.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Background\BG_Green.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Background\BG_Yellow.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Apple.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Bananas.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Cherries.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Collected.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Kiwi.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Melon.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Orange.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Pineapple.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Items\Fruits\Strawberry.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Double Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Fall.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Hit.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Idle.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Walking.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Frog\Wall Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Double Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Fall.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Hit.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Idle.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Walking.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\Wall Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\TiledMap\Prison_B.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\TiledMap\Terrain.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Traps\Idle.xnb
