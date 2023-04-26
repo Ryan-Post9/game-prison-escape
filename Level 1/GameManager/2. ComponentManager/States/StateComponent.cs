@@ -46,6 +46,9 @@ namespace ECS_Framework
         // Jump Counter
         public int JumpsPerformed = 0;
 
+        // Jump Slide
+        public bool jumpedWhenSlide = false;
+
         // Flags for movement restrictions
         private bool _canMoveLeft, _canMoveRight;
 

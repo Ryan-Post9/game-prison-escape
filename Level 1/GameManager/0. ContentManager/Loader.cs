@@ -38,6 +38,15 @@ namespace ECS_Framework
             textures.Add("player_slide", content.Load<Texture2D>("Player/Virtual Guy/Wall Jump"));
             textures.Add("player_death", content.Load<Texture2D>("Player/Virtual Guy/Hit"));
 
+            // Enemy
+            textures.Add("enemy_idle", content.Load<Texture2D>("Player/Mask Dude/Idle"));
+            textures.Add("enemy_walking", content.Load<Texture2D>("Player/Mask Dude/Walking"));
+            textures.Add("enemy_jump", content.Load<Texture2D>("Player/Mask Dude/Jump"));
+            textures.Add("enemy_double_jump", content.Load<Texture2D>("Player/Mask Dude/Double Jump"));
+            textures.Add("enemy_fall", content.Load<Texture2D>("Player/Mask Dude/Fall"));
+            textures.Add("enemy_slide", content.Load<Texture2D>("Player/Mask Dude/Wall Jump"));
+            textures.Add("enemy_death", content.Load<Texture2D>("Player/Mask Dude/Hit"));
+
             //Traps
             textures.Add("trap", content.Load<Texture2D>("Traps/Idle"));
 
@@ -50,6 +59,7 @@ namespace ECS_Framework
             // Background
             textures.Add("bg_green", content.Load<Texture2D>("Background/BG_Green"));
             textures.Add("bg_yellow", content.Load<Texture2D>("Background/BG_Yellow"));
+            textures.Add("WireMesh", content.Load<Texture2D>("WireMesh"));
             
             textures.Add("Terrain", content.Load<Texture2D>("TiledMap/Prison_B"));
             // Add more terrain types here

@@ -50,6 +50,10 @@ namespace ECS_Framework
         /// <param name="gameTime">A snapshot of the current game time.</param>
         public void Update(GameTime gameTime)
         {
+            if(_velocity == Vector2.Zero)
+            {
+                return;
+            }
             float elapsedSeconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
             Vector2 displacement = _velocity * elapsedSeconds;
 

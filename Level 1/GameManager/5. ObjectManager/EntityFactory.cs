@@ -86,7 +86,41 @@ namespace ECS_Framework
 
             return player;
         }
+        public static Entity CreateCop(Vector2 position, float left, float right)
+        {
+            //Empty Player
+            Entity cop = new Entity();
+            cop.AddComponent(new EntityTypeComponent(EntityType.WalkingEnemy));
+            // Animations
+            AnimatedComponent animation = new AnimatedComponent();
+            animation.AddAnimation("enemy_idle", "idle", 1, 11, 20);
+            animation.AddAnimation("enemy_walking", "walking", 1, 12, 20);
+            animation.AddAnimation("enemy_jump", "jump", 1, 1, 20);
+            animation.AddAnimation("enemy_double_jump", "double_jump", 1, 6, 20);
+            animation.AddAnimation("enemy_fall", "fall", 1, 1, 20);
+            animation.AddAnimation("enemy_slide", "slide", 1, 5, 20);
+            animation.AddAnimation("enemy_death", "death", 1, 7, 20);
+            cop.AddComponent(animation);
 
+            // States
+            cop.AddComponent(new StateComponent());
+            cop.AddComponent(new NPCInputComponent(left,right));
+
+            // Position and transforms
+            cop.AddComponent(new MovementComponent(position));
+
+            // Collisions
+            cop.AddComponent(new CollisionBoxComponent(
+                    position: position,
+                    width: 32,
+                    height: 32,
+                    vertTopOffset: 8,
+                    vertBottomOffset: 0,
+                    horLeftOffset: 4,
+                    horRightOffset: 6));
+
+            return cop;
+        }
         public static Entity CreateApple(Vector2 position)
         {
             //Empty coin

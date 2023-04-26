@@ -130,7 +130,10 @@ namespace ECS_Framework
                     enemy.State.CurrentSuperState = SuperState.IsDead;
                     break;
                 default:
-                    player.State.CurrentSuperState = SuperState.IsDead;
+                    if (enemy.State.CurrentSuperState != SuperState.IsDead)
+                    {
+                        player.State.CurrentSuperState = SuperState.IsDead;
+                    }
                     break;
             }
         }

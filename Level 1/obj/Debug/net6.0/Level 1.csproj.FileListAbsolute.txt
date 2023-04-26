@@ -1,133 +1,215 @@
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.csproj.AssemblyReference.cache
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.AssemblyInfoInputs.cache
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.AssemblyInfo.cs
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.csproj.CoreCompileInputs.cache
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Level 1.exe
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Level 1.deps.json
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Level 1.runtimeconfig.json
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Level 1.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Level 1.pdb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\MonoGame.Framework.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.csproj.CopyComplete
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\refint\Level 1.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.pdb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\Level 1.genruntimeconfig.cache
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\obj\Debug\net6.0\ref\Level 1.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Character Idle 48x48.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\File.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\player jump 48x48.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\player land 48x48.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Player Roll 48x48.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\run cycle 48x48.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Idle.xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\TiledCS.dll
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Terrain (16x16).xnb
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\level.tmx
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\terrain.tsx
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
-D:\dev\mg1-deleteSomeDay\Level 1\Level 1\bin\Debug\net6.0\Content\Idle.tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.exe
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\MonoGame.Framework.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\TiledCS.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Character Idle 48x48.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\File.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Officer_sheet_boxed_0.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\player jump 48x48.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\player land 48x48.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Player Roll 48x48.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\run cycle 48x48.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Spotlight.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Spotlight64x64.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Terrain (16x16).xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\level.tmx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\terrain.tsx
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.AssemblyReference.cache
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.AssemblyInfoInputs.cache
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.AssemblyInfo.cs
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.CoreCompileInputs.cache
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.CopyComplete
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.dll
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\refint\Level 1.dll
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.pdb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.csproj.AssemblyReference.cache
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.GeneratedMSBuildEditorConfig.editorconfig
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfoInputs.cache
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfo.cs
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.csproj.CoreCompileInputs.cache
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Level 1.exe
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Level 1.deps.json
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Level 1.runtimeconfig.json
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Level 1.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Level 1.pdb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/MonoGame.Framework.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.csproj.CopyComplete
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/refint/Level 1.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.pdb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/Level 1.genruntimeconfig.cache
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/obj/Debug/net6.0/ref/Level 1.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Character Idle 48x48.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/File.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/player jump 48x48.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/player land 48x48.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Player Roll 48x48.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/run cycle 48x48.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Idle.xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/TiledCS.dll
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Terrain (16x16).xnb
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/level.tmx
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/terrain.tsx
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).tsx
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).tsx
+D:/dev/mg1-deleteSomeDay/Level 1/Level 1/bin/Debug/net6.0/Content/Idle.tsx
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.exe
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.dll
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/MonoGame.Framework.dll
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/TiledCS.dll
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Character Idle 48x48.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/File.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Officer_sheet_boxed_0.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/player jump 48x48.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/player land 48x48.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player Roll 48x48.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/run cycle 48x48.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Spotlight.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Spotlight64x64.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Terrain (16x16).xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).tsx
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).tsx
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.tsx
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/level.tmx
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/terrain.tsx
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.AssemblyReference.cache
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.GeneratedMSBuildEditorConfig.editorconfig
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfoInputs.cache
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfo.cs
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.CoreCompileInputs.cache
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.CopyComplete
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.dll
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/refint/Level 1.dll
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.pdb
 <<<<<<< HEAD
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.genruntimeconfig.cache
-D:\dev\game-prison-escape\Level 1\obj\Debug\net6.0\ref\Level 1.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).tsx
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).tsx
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.tsx
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\level.tmx
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\terrain.tsx
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Brown On (32x8).xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Character Idle 48x48.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\File.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Grey On (32x8).xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Idle.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Key.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Officer_sheet_boxed_0.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\player jump 48x48.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\player land 48x48.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Player Roll 48x48.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\run cycle 48x48.xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Terrain (16x16).xnb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.exe
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.deps.json
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.runtimeconfig.json
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.pdb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\MonoGame.Framework.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\TiledCS.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.AssemblyReference.cache
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.AssemblyInfoInputs.cache
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.AssemblyInfo.cs
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.CoreCompileInputs.cache
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.csproj.CopyComplete
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\refint\Level 1.dll
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.pdb
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\Level 1.genruntimeconfig.cache
-C:\Users\Cabot McTavish\Source\Repos\game-prison-escape\Level 1\obj\Debug\net6.0\ref\Level 1.dll
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.genruntimeconfig.cache
+D:/dev/game-prison-escape/Level 1/obj/Debug/net6.0/ref/Level 1.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).tsx
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).tsx
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.tsx
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/level.tmx
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/terrain.tsx
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Character Idle 48x48.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/File.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Key.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Officer_sheet_boxed_0.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/player jump 48x48.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/player land 48x48.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player Roll 48x48.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/run cycle 48x48.xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Terrain (16x16).xnb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.exe
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.deps.json
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.runtimeconfig.json
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.pdb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/MonoGame.Framework.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/TiledCS.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.AssemblyReference.cache
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfoInputs.cache
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfo.cs
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.CoreCompileInputs.cache
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.CopyComplete
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/refint/Level 1.dll
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.pdb
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.genruntimeconfig.cache
+C:/Users/Cabot McTavish/Source/Repos/game-prison-escape/Level 1/obj/Debug/net6.0/ref/Level 1.dll
 =======
 >>>>>>> main
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Key.xnb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.deps.json
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.runtimeconfig.json
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Level 1.pdb
-D:\dev\game-prison-escape\Level 1\bin\Debug\net6.0\Content\Prison_B.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Key.xnb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.deps.json
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.runtimeconfig.json
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.pdb
+D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Prison_B.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Background/BG_Green.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Background/BG_Yellow.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Apple.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Bananas.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Cherries.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Collected.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Kiwi.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Melon.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Orange.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Pineapple.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Items/Fruits/Strawberry.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Double Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Fall.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Hit.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Idle.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Walking.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Frog/Wall Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Double Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Fall.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Hit.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Idle.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Walking.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Virtual Guy/Wall Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/TiledMap/Prison_B.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/TiledMap/Terrain.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Traps/Idle.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).tsx
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).tsx
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.tsx
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/level.tmx
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/terrain.tsx
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Character Idle 48x48.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/File.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Key.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Officer_sheet_boxed_0.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/player jump 48x48.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/player land 48x48.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player Roll 48x48.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Prison_B.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/run cycle 48x48.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Spotlight.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Spotlight64x64.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Terrain (16x16).xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/WireMesh.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.deps.json
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.runtimeconfig.json
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Level 1.pdb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/MonoGame.Framework.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/TiledCS.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.AssemblyReference.cache
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfoInputs.cache
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.AssemblyInfo.cs
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.CoreCompileInputs.cache
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.csproj.CopyComplete
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/refint/Level 1.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.pdb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/Level 1.genruntimeconfig.cache
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/obj/Debug/net6.0/ref/Level 1.dll
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Double Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Fall.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Hit.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Idle.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Walking.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Wall Jump.xnb
