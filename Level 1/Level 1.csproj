@@ -25,9 +25,6 @@
     <PackageReference Include="TiledCS" Version="3.3.3" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Free\Terrain\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Update="Content\Brown On %2832x8%29.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -37,7 +34,7 @@
     <None Update="Content\Idle.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Content\level.tmx">
+    <None Update="Content\TiledMap\Level4.tmx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Content\terrain.tsx">

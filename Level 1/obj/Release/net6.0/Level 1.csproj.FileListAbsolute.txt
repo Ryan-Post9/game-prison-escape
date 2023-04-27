@@ -14,7 +14,6 @@ D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Terrain (16x16).xnb
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Brown On (32x8).tsx
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Grey On (32x8).tsx
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Idle.tsx
-D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\level.tmx
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\terrain.tsx
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Level 1.exe
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Level 1.deps.json
@@ -73,3 +72,12 @@ D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Virtual Guy\
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\TiledMap\Prison_B.xnb
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\TiledMap\Terrain.xnb
 D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Traps\Idle.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Double Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Fall.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Hit.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Idle.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Walking.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\Player\Mask Dude\Wall Jump.xnb
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\TiledMap\Level4.tmx
+D:\dev\game-prison-escape\Level 1\bin\Release\net6.0\Content\PrisonHome.xnb

@@ -7,6 +7,7 @@ namespace ECS_Framework
     /// </summary>
     public enum LevelID
     {
+        HomeScreen,
         Level1,
         Level2,
         Level3,

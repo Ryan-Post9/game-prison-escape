@@ -23,6 +23,7 @@ namespace ECS_Framework
         /// </summary>
         private void InitializeLevels()
         {
+            levels.Add(LevelID.HomeScreen, new Level(LevelID.HomeScreen, new HomeScreenInitializer()));
             levels.Add(LevelID.Level1, new Level(LevelID.Level1, new Level1Initializer()));
             levels.Add(LevelID.Level2, new Level(LevelID.Level2, new Level2Initializer()));
             levels.Add(LevelID.Level3, new Level(LevelID.Level3, new Level3Initializer()));

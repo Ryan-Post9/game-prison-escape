@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+using System.Diagnostics;
 
 namespace ECS_Framework
 {
@@ -21,7 +22,7 @@ namespace ECS_Framework
         public World()
         {
             levelManager = new LevelManager();
-            CurrentLevel = levelManager.GetLevel(LevelID.Level1);
+            CurrentLevel = levelManager.GetLevel(LevelID.HomeScreen);
             systems = new SystemManager(CurrentLevel.Id);
             LoadLevel(CurrentLevel);
             MessageBus.Subscribe<DestroyEntityMessage>(OnDestroyEntity);

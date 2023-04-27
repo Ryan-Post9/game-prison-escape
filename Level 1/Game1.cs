@@ -71,11 +71,11 @@ namespace ECS_Framework
             else if (currentKeyboardState.IsKeyDown(Keys.R) && previousKeyboardState.IsKeyUp(Keys.R))
                 world.ResetCurrentLevel();
 
-            //else if (currentKeyboardState.IsKeyDown(Keys.P) && previousKeyboardState.IsKeyUp(Keys.P))
-                //world.PreviousLevel();
+            else if (currentKeyboardState.IsKeyDown(Keys.P) && previousKeyboardState.IsKeyUp(Keys.P))
+                world.PreviousLevel();
 
-            //else if (currentKeyboardState.IsKeyDown(Keys.N) && previousKeyboardState.IsKeyUp(Keys.N))
-                //world.NextLevel();
+            else if (currentKeyboardState.IsKeyDown(Keys.N) && previousKeyboardState.IsKeyUp(Keys.N))
+                world.NextLevel();
 
             previousKeyboardState = currentKeyboardState;
 
@@ -90,7 +90,7 @@ namespace ECS_Framework
         /// <param name="gameTime">The current game time.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.DimGray);
 
             _spriteBatch.Begin(SpriteSortMode.BackToFront, null, SamplerState.PointClamp);
             Loader.tiledHandler.Draw(world.CurrentLevel.Id.ToString(), _spriteBatch);

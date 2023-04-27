@@ -1,4 +1,8 @@
 {
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
     "activeFile": "",
     "expandedProjectPaths": [
     ],
@@ -11,9 +15,60 @@
         "Prison_B.tsx": {
             "scaleInEditor": 1
         },
+        "TiledMap/HomeScreen.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 308.66666666666663,
+                "y": 209.99999999999997
+            }
+        },
+        "TiledMap/Level1.tmx": {
+            "scale": 1.0034374999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 181.8748053565868,
+                "y": 184.8645281843663
+            }
+        },
+        "TiledMap/Level2.tmx": {
+            "scale": 1.0034374999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.89691684833394,
+                "y": 184.8645281843663
+            }
+        },
+        "TiledMap/Level3.tmx": {
+            "scale": 1.0034374999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.89691684833394,
+                "y": 184.8645281843663
+            }
+        },
+        "TiledMap/Level4.tmx": {
+            "scale": 0.4714375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 401.96208405143847,
+                "y": 240.75301604136288
+            }
+        },
+        "level.tmx": {
+            "scale": 0.4714375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 401.96208405143847,
+                "y": 240.7530160413629
+            }
+        },
         "prisonlevel1.tmx": {
             "scale": 0.75,
-            "selectedLayer": 0,
+            "selectedLayer": -1,
             "viewCenter": {
                 "x": 398.6666666666667,
                 "y": 173.99999999999997
@@ -31,12 +86,17 @@
             "scale": 0.80275,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 401.1211460604173,
+                "x": 399.87542821550915,
                 "y": 121.4574898785425
             }
         }
     },
     "last.imagePath": "D:/dev/game-prison-escape/Level 1/Content",
+    "map.height": 23,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 40,
     "openFiles": [
     ],
     "project": "untitled.tiled-project",
@@ -45,6 +105,7 @@
         "prisonlevel1.tmx",
         "Brown On (32x8).tsx"
     ],
+    "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
         "height": 16,
         "width": 16

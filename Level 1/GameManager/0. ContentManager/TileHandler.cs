@@ -113,7 +113,7 @@ namespace ECS_Framework
 
             foreach (var layer in map.Layers)
             {
-                if (layer.type == TiledLayerType.TileLayer)
+                if (layer.type == TiledLayerType.TileLayer || layer.type == TiledLayerType.ImageLayer)
                 {
                     for (int y = 0; y < layer.height; y++)
                     {

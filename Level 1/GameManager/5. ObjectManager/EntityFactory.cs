@@ -213,5 +213,38 @@ namespace ECS_Framework
 
             return trap;
         }
+        /*
+        public static Entity CreateSpotlight(Vector2 position)
+        {
+            //Empty coin
+            Entity spotlight = new Entity();
+            spotlight.AddComponent(new EntityTypeComponent(EntityType.Trap));
+
+            //Animations
+            AnimatedComponent animation = new AnimatedComponent();
+            animation.AddAnimation("trap", "idle", 1, 1, 20);
+            animation.AddAnimation("trap", "fall", 1, 1, 20);
+            spotlight.AddComponent(animation);
+
+
+            // States
+            spotlight.AddComponent(new StateComponent(State.Idle, SuperState.IsFalling));
+
+            // Position and transforms
+            spotlight.AddComponent(new MovementComponent(position));
+
+            // Collisions
+            spotlight.AddComponent(new CollisionBoxComponent(
+                    position: position,
+                    width: 16,
+                    height: 16,
+                    vertTopOffset: 8,
+                    vertBottomOffset: 0,
+                    horLeftOffset: 0,
+                    horRightOffset: 0));
+
+            return spotlight;
+        }
+        */
     }
 }
