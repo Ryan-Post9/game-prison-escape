@@ -14,11 +14,12 @@ namespace ECS_Framework
         public List<Entity> GetObjects()
         {
             List<Entity> objects = new List<Entity>();
-            //objects.Add(EntityFactory.CreateParallaxBackground("bg_yellow", new Vector2(0, 50)));
+            objects.Add(EntityFactory.CreateParallaxBackground("WireMesh", new Vector2(0,0)));
             objects.Add(EntityFactory.CreateApple(new Vector2(550, 200)));
             objects.Add(EntityFactory.CreateTrap(new Vector2(600, 200)));
             objects.Add(EntityFactory.CreateTrap(new Vector2(400, 200)));
             objects.Add(EntityFactory.CreateTrap(new Vector2(500, 200)));
+            objects.Add(EntityFactory.CreateCop(new Vector2(400,150), 320, 600));
             objects.Add(EntityFactory.CreatePlayer(new Vector2(20, 200)));
             return objects;
         }

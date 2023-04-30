@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Walking.png</SourceFile>
-  <SourceTime>2023-04-26T22:24:16.712801-04:00</SourceTime>
-  <DestFile>D:/dev/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Player/Mask Dude/Walking.xnb</DestFile>
-  <DestTime>2023-04-26T22:25:00.8065612-04:00</DestTime>
+  <SourceFile>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Walking.png</SourceFile>
+  <SourceTime>2023-04-26T12:58:34.4667489-04:00</SourceTime>
+  <DestFile>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/bin/DesktopGL/Content/Player/Mask Dude/Walking.xnb</DestFile>
+  <DestTime>2023-04-30T14:33:38.7699312-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-24T07:13:12-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -162,7 +162,6 @@ D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Prison_B.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).tsx
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Grey On (32x8).tsx
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Idle.tsx
-/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/level.tmx
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/terrain.tsx
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Brown On (32x8).xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Character Idle 48x48.xnb
@@ -213,3 +212,5 @@ D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Prison_B.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Jump.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Walking.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Wall Jump.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/PrisonHome.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/TiledMap/Level4.tmx

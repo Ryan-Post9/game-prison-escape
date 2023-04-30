@@ -16,7 +16,7 @@ namespace ECS_Framework
             List<Entity> objects = new List<Entity>();
             objects.Add(EntityFactory.CreateParallaxBackground("WireMesh", new Vector2(0,0)));
             objects.Add(EntityFactory.CreateApple(new Vector2(10, 30)));
-            objects.Add(EntityFactory.CreateCop(new Vector2(250,250), 200, 300));
+            
             //objects.Add(EntityFactory.CreatePortal(new Vector2(524, 80)));
             objects.Add(EntityFactory.CreatePlayer(new Vector2(100, 100)));
             return objects;
