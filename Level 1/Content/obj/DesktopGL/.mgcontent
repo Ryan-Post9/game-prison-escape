@@ -4,32 +4,34 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Brown On (32x8).png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Character Idle 48x48.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/File.spritefont</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Grey On (32x8).png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Idle.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Key.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Officer_sheet_boxed_0.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/player jump 48x48.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/player land 48x48.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player Roll 48x48.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Double Jump.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Fall.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Hit.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Idle.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Jump.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Walking.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Player/Mask Dude/Wall Jump.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Prison_B.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/PrisonHome.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/run cycle 48x48.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Spotlight64x64.png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/Terrain (16x16).png</File>
-    <File>D:/dev/game-prison-escape/Level 1/Content/WireMesh.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Brown On (32x8).png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Character Idle 48x48.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/File.spritefont</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Grey On (32x8).png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Idle.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Key.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Officer_sheet_boxed_0.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/player jump 48x48.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/player land 48x48.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player Roll 48x48.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Double Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Fall.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Hit.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Idle.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Walking.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Player/Mask Dude/Wall Jump.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Prison_B.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/PrisonEscape.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/PrisonHome.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/run cycle 48x48.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Spotlight.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Spotlight64x64.png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/Terrain (16x16).png</File>
+    <File>/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/Content/WireMesh.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -212,5 +212,6 @@ D:/dev/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Prison_B.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Jump.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Walking.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/Player/Mask Dude/Wall Jump.xnb
-/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/PrisonHome.xnb
 /Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/TiledMap/Level4.tmx
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/PrisonHome.xnb
+/Users/ryanpost/Desktop/Comp Game Design/game-prison-escape/Level 1/bin/Debug/net6.0/Content/PrisonEscape.xnb

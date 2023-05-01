@@ -60,17 +60,19 @@ namespace ECS_Framework
             textures.Add("bg_green", content.Load<Texture2D>("Background/BG_Green"));
             textures.Add("bg_yellow", content.Load<Texture2D>("Background/BG_Yellow"));
             textures.Add("WireMesh", content.Load<Texture2D>("WireMesh"));
+            textures.Add("PrisonEscape", content.Load<Texture2D>("PrisonEscape"));
             textures.Add("PrisonHome", content.Load<Texture2D>("PrisonHome"));
-
+            textures.Add("Terrain2", content.Load<Texture2D>("Terrain (16x16)"));
             textures.Add("Terrain", content.Load<Texture2D>("TiledMap/Prison_B"));
             //textures.Add("Terrain (16x16)", content.Load<Texture2D>("TiledMap/Terrain (16x16)"));
             // Add more terrain types here
 
             // Map Terrains to their Level
-            AddTerrain("Terrain", LevelID.HomeScreen);
+            AddTerrain("PrisonHome", LevelID.HomeScreen);
             AddTerrain("Terrain", LevelID.Level1);
             AddTerrain("Terrain", LevelID.Level2);
             AddTerrain("Terrain", LevelID.Level3);
+            AddTerrain("Terrain2", LevelID.Level5);
             //AddTerrain("Terrain (16x16)", LevelID.Level4);
             //Map more Levels to terrains here
 

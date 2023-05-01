@@ -11,6 +11,7 @@ namespace ECS_Framework
         Level1,
         Level2,
         Level3,
+        Level5,
         // Add more level IDs here
     }
 

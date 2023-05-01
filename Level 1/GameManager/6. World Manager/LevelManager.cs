@@ -27,6 +27,7 @@ namespace ECS_Framework
             levels.Add(LevelID.Level1, new Level(LevelID.Level1, new Level1Initializer()));
             levels.Add(LevelID.Level2, new Level(LevelID.Level2, new Level2Initializer()));
             levels.Add(LevelID.Level3, new Level(LevelID.Level3, new Level3Initializer()));
+            levels.Add(LevelID.Level5, new Level(LevelID.Level5, new Level5Initializer()));
             // Add more levels here
         }
 
